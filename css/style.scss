@@ -19,9 +19,9 @@ $BigShadow: 0px 8px 24px #00000030;
   direction: rtl;
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  background-color: $mainColor;
+  width: 8px;
+  height: 8px;
+  // background-color: #eee;
   border-radius: 0px !important;
 }
 ::-webkit-scrollbar-track {
@@ -29,7 +29,7 @@ $BigShadow: 0px 8px 24px #00000030;
   border-radius: 0px !important;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $mainColor;
+  background-color: #999;
   outline: none;
   border-radius: 20px !important;
 }
@@ -136,9 +136,30 @@ content {
   padding: 0;
   .navbar-brand {
     padding: 10px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    position: relative;
     .logo {
       height: 50px;
       object-fit: contain;
+    }
+  }
+  .language {
+    padding: 20px 12px;
+    .dropdown-toggle {
+      color: $mainColor;
+    }
+    .dropdown-item {
+      text-align: start;
+
+      img {
+        width: 30px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-left: 5px;
+      }
     }
   }
   .nav-item {
@@ -190,8 +211,25 @@ content {
   .dropdown {
     text-align: center;
     .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       &::after {
-        display: none;
+        border: none !important;
+        content: "\f104" !important;
+        // font-weight: 900;
+        font-family: "Font Awesome 6 Pro";
+        transition: $transition;
+        margin-right: 5px;
+        width: 10px !important;
+      }
+    }
+    &:hover {
+        .dropdown-toggle {
+          &::after {
+            transform: rotate(-90deg);
+          }
+        
       }
     }
     .dropdown-menu {
@@ -249,7 +287,7 @@ content {
         animation-name: unset !important;
         box-shadow: none;
         text-align: center;
-        background-color: #145e4e10;
+        background-color: #f0f5f4;
       }
       &:hover {
         .dropdown-menu {
@@ -427,7 +465,7 @@ content {
     margin-bottom: 50px;
     h2 {
       font-size: 40px !important;
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         font-size: 30px !important;
       }
       font-weight: bold;

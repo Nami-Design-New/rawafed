@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   //MainSlider
   var swiper = new Swiper('.MainSlider-container', {
     spaceBetween: 0,
@@ -23,11 +22,10 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-
-
-  function addWowDelay() { $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); }); } addWowDelay();
-
-
+  // add Wow Delay 
+  // function addWowDelay() {
+  //    $('.wow').each(function (i) { d = i * 0.1 ; $(this).attr('data-wow-delay', d + "s"); });
+  //    } addWowDelay();
   //spinner
   $(".spinner ").fadeOut("slow");
   // tooltip

@@ -14,9 +14,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  background-color: #145e4e;
+  width: 8px;
+  height: 8px;
   border-radius: 0px !important;
 }
 
@@ -27,7 +26,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #145e4e;
+  background-color: #999;
   outline: none;
   border-radius: 20px !important;
 }
@@ -149,12 +148,41 @@ content {
 
 .mainNav .navbar-brand {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .mainNav .navbar-brand .logo {
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.mainNav .language {
+  padding: 20px 12px;
+}
+
+.mainNav .language .dropdown-toggle {
+  color: #145e4e;
+}
+
+.mainNav .language .dropdown-item {
+  text-align: start;
+}
+
+.mainNav .language .dropdown-item img {
+  width: 30px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  margin-left: 5px;
 }
 
 .mainNav .nav-item {
@@ -201,8 +229,31 @@ content {
   text-align: center;
 }
 
+.mainNav .dropdown .dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mainNav .dropdown .dropdown-toggle::after {
-  display: none;
+  border: none !important;
+  content: "\f104" !important;
+  font-family: "Font Awesome 6 Pro";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+  width: 10px !important;
+}
+
+.mainNav .dropdown:hover .dropdown-toggle::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .mainNav .dropdown .dropdown-menu {
@@ -275,7 +326,7 @@ content {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-align: center;
-    background-color: #145e4e10;
+    background-color: #f0f5f4;
   }
   .mainNav .dropdown:hover .dropdown-menu {
     -webkit-animation-name: unset !important;

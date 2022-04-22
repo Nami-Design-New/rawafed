@@ -135,7 +135,7 @@ content {
   box-shadow: $BigShadow;
   padding: 0;
   .navbar-brand {
-    padding: 0;
+    padding: 10px;
     .logo {
       height: 50px;
       object-fit: contain;
@@ -215,8 +215,8 @@ content {
           width: 0px;
           height: 80%;
           background-color: $mainColor;
-          border-bottom-left-radius: 100px;
-          border-top-left-radius: 100px;
+          border-bottom-left-radius: 50%;
+          border-top-left-radius: 50%;
           transition: 0.1s ease-in-out;
           transform: translateY(-50%);
         }
@@ -371,8 +371,7 @@ content {
         @media (max-width: 768px) {
           margin-right: 0px;
         }
-        h4 {
-          font-size: 25px;
+        .hint {
           color: $white-color;
           text-transform: capitalize;
           text-shadow: 3px 2px 3px #00000040;
@@ -382,7 +381,7 @@ content {
             line-height: 40px;
           }
         }
-        h1 {
+        .sliderTitle {
           font-size: 50px;
           overflow: hidden;
           color: $white-color;
@@ -401,13 +400,13 @@ content {
   }
 }
 .mainSlideItem.swiper-slide-active {
-  h2 {
+  .hint {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInDown !important;
     animation-delay: 0.5s;
   }
-  h1 {
+  .sliderTitle {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInUp !important;
@@ -416,7 +415,7 @@ content {
   a {
     animation-duration: 1s;
     animation-fill-mode: both;
-    animation-name: fadeInLeft !important;
+    animation-name: fadeInUp !important;
     animation-delay: 1.5s;
   }
 }
@@ -447,6 +446,7 @@ content {
   /* Global */
   h1 {
     font-size: 30px !important;
+    line-height: 50px;
   }
   h2 {
     font-size: 26px !important;

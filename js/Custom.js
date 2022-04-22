@@ -24,19 +24,22 @@ $(document).ready(function () {
   });
 
 
-  var theDiv = $("section");
-  for (var n = 0; n < theDiv.length; ++n) {
-    function addWowDelay() {
-      $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
-    } addWowDelay();
-  }
+  // var theDiv = $("section");
+  // for (var n = 0; n < theDiv.length; ++n) {
+  //   function addWowDelay() {
+  //     $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
+  //   } addWowDelay();
+  // }
 
 
   
   // add Wow Delay 
-  // function addWowDelay() {
-  //    $('.wow').each(function (i) { d = i * 0.1 ; $(this).attr('data-wow-delay', d + "s"); });
-  //    } addWowDelay();
+  function addWowDelay() {
+     $(' .Features .wow').each(function (i) { d = i * 0.1 ; $(this).attr('data-wow-delay', d + "s"); });
+     } addWowDelay();
+
+
+     
   //spinner
   $(".spinner ").fadeOut("slow");
   // tooltip

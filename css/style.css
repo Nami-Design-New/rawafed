@@ -790,6 +790,7 @@ content {
   }
   .family .single .info h3 {
     font-size: 25px !important;
+    margin-bottom: 10px !important;
   }
   .family .single .info h5 {
     font-size: 15px !important;

@@ -353,10 +353,6 @@ content {
         right: 0;
         transition: $transition;
       }
-      @media (max-width: 768px) {
-        justify-content: center;
-        height: 750px;
-      }
       .info {
         position: relative;
         z-index: 2;
@@ -376,10 +372,7 @@ content {
           text-transform: capitalize;
           text-shadow: 3px 2px 3px #00000040;
           margin-bottom: 10px;
-          @media (max-width: 768px) {
-            font-size: 24px;
-            line-height: 40px;
-          }
+
         }
         .sliderTitle {
           font-size: 50px;
@@ -388,9 +381,9 @@ content {
           font-weight: bolder;
           text-transform: uppercase;
           text-shadow: 3px 2px 3px #00000040;
-          @media (max-width: 768px) {
-            font-size: 40px;
-          }
+          line-height: 36px;
+
+         
         }
         a {
           margin-top: 30px;
@@ -446,7 +439,6 @@ content {
   /* Global */
   h1 {
     font-size: 30px !important;
-    line-height: 50px;
   }
   h2 {
     font-size: 26px !important;

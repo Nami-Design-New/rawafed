@@ -675,6 +675,130 @@ content {
   background-image: linear-gradient(60deg, #5d79d2d5, #145e4ed5), url(../img/f1.jpg);
 }
 
+.family {
+  padding: 70px 0 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.family .single {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.family .single .image {
+  position: relative;
+  width: 50%;
+  margin-left: 40px;
+}
+
+.family .single .image img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  border-radius: 70px 4px 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.family .single .image::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  background: url(../img/dots.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: bounceIn 3s infinite ease-in-out both;
+          animation: bounceIn 3s infinite ease-in-out both;
+}
+
+.family .single .info {
+  position: relative;
+  z-index: 2;
+}
+
+.family .single .info h3 {
+  font-weight: bold;
+  font-size: 35px !important;
+  margin-bottom: 20px;
+  color: #145e4e;
+}
+
+.family .single .info h5 {
+  font-size: 25px !important;
+  color: #777;
+}
+
+.family .single:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.family .single:nth-child(even) .image {
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.family .single:nth-child(even) .image::before {
+  right: unset;
+  left: -50px;
+  animation: heartBeat 5s infinite ease-in-out both reverse;
+}
+
+.family .single:nth-child(even) .info {
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .family .single {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .family .single .image {
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .family .single .image img {
+    border-radius: 8px !important;
+    height: 200px;
+  }
+  .family .single .image::before {
+    width: 80px;
+    height: 80px;
+  }
+  .family .single .info {
+    margin-bottom: 40px;
+    text-align: center !important;
+  }
+  .family .single .info h3 {
+    font-size: 25px !important;
+  }
+  .family .single .info h5 {
+    font-size: 15px !important;
+  }
+  .family .single:last-child .info {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 992px) {
   /* Global */
   h1 {

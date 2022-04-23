@@ -37,8 +37,6 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
-
-
   // wow
   const section = $('section');
   for (let i = 0; i < section.length; i++) {
@@ -46,24 +44,16 @@ $(document).ready(function () {
       $('.wow', this).each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
     } addWowDelay();
   }
-
-
   // function addWowDelay() {
   //   $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
   // } addWowDelay();
-
-
   //spinner
   $(".spinner ").fadeOut("slow");
+  //WOW js
+  new WOW().init();
   // tooltip
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
-  //select2
-  $('.select2').select2();
-  //WOW js
-  new WOW().init();
-  //dropify
-  $('.dropify').dropify();
 });

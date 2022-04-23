@@ -1182,7 +1182,7 @@ content {
 }
 
 .footer {
-  background-image: linear-gradient(45deg, #08382e, #1b7f69);
+  background-image: linear-gradient(45deg, #052d25ca, #1b7f69), url(../img/map.png);
   background-size: cover;
   padding: 20px 0;
   -webkit-box-shadow: 0px -10px 20px #13223530;
@@ -1257,17 +1257,25 @@ content {
 }
 
 .footer .Links .more {
-  margin-bottom: 10px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
 }
 
 .footer .Links .more p {
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 .footer .Links .more a {
   color: #e9e7c8;
-  font-size: small;
+  margin-left: 10px;
+}
+
+.footer .Links .more a:last-child {
+  margin-left: 0px;
 }
 
 .footer .Links .more a:hover {

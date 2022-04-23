@@ -23,23 +23,32 @@ $(document).ready(function () {
     },
   });
 
+  //Categories Slider
+  var swiper = new Swiper('.referencesSlider', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop:true,
+    slidesPerView: 'auto',
+    spaceBetween: 5,
+    speed: 1000,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+  });
 
-  // var theDiv = $("section");
-  // for (var n = 0; n < theDiv.length; ++n) {
-  //   function addWowDelay() {
-  //     $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
-  //   } addWowDelay();
-  // }
 
 
-  
-  // add Wow Delay 
-  function addWowDelay() {
-     $(' .Features .wow').each(function (i) { d = i * 0.1 ; $(this).attr('data-wow-delay', d + "s"); });
-     } addWowDelay();
+  var section = document.querySelectorAll(".container");
+  for (let i = 0; i < section.length; i++) {
+    function addWowDelay() {
+      $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
+    } addWowDelay();
+  }
 
 
-     
   //spinner
   $(".spinner ").fadeOut("slow");
   // tooltip

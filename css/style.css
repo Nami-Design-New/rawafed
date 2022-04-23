@@ -1582,7 +1582,7 @@ content {
 
 @media (max-width: 768px) {
   .mainBanner {
-    padding: 175px 15px 45px;
+    padding: 70px 15px 45px;
   }
   .mainBanner .Back {
     margin-left: 20px;
@@ -1899,6 +1899,57 @@ content {
   .arriveWorker .arriveWorkerInfo:last-child .info {
     margin-bottom: 0;
   }
+}
+
+.policies {
+  padding: 100px 0 50px;
+  background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/policies.png);
+  background-size: cover;
+  text-align: center;
+}
+
+.policies .container {
+  max-width: 900px;
+}
+
+.policies .container h1 {
+  font-weight: bold;
+  color: #f5f4de;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+
+.policies .container h4 {
+  margin: auto;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.policies .container .links {
+  padding-top: 40px;
+}
+
+.policies .container .links a {
+  padding: 15px 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4de;
+  color: #145e4e;
+  border-radius: 4px;
+  margin: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #145e4e;
+}
+
+.policies .container .links a:hover {
+  background-color: #145e4e;
+  color: #f5f4de;
 }
 
 @media (min-width: 992px) {

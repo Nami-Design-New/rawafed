@@ -1144,8 +1144,6 @@ content {
   min-height: 300px;
   height: 100%;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 8px 24px #00000030;
-          box-shadow: 0px 8px 24px #00000030;
 }
 
 .socialIcons {
@@ -1266,6 +1264,7 @@ content {
 
 .footer .Links .more p {
   color: #ffffff;
+  white-space: nowrap;
   margin-left: 10px;
 }
 

@@ -22,14 +22,13 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-
   //Categories Slider
   var swiper = new Swiper('.referencesSlider', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    loop:true,
+    loop: true,
     slidesPerView: 'auto',
     spaceBetween: 5,
     speed: 1000,
@@ -40,10 +39,18 @@ $(document).ready(function () {
   });
 
 
+  // wow
+  const section = $('section');
+  for (let i = 0; i < section.length; i++) {
+    function addWowDelay() {
+      $('.wow', this).each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
+    } addWowDelay();
+  }
 
-  function addWowDelay() {
-    $('.container .wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
-  } addWowDelay();
+
+  // function addWowDelay() {
+  //   $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
+  // } addWowDelay();
 
 
   //spinner

@@ -986,6 +986,7 @@ content {
         a {
           color: $mainColor;
           font-weight: bold;
+          white-space: nowrap;
         }
       }
     }
@@ -1066,7 +1067,7 @@ content {
 
 
 .contactForm {
-  margin: 100px 0;
+  padding: 70px 0;
 
   .title {
     text-align: center;
@@ -1153,8 +1154,6 @@ content {
   box-shadow: 0px -10px 20px #13223530;
   position: relative;
   z-index: 2;
-  margin-top: 50px;
-
   .logo {
     max-height: 80px;
     object-fit: contain;

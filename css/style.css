@@ -91,7 +91,7 @@ body {
 }
 
 content {
-  min-height: 70vh;
+  min-height: 50vh;
   position: relative;
   display: block;
 }
@@ -541,12 +541,12 @@ content {
   width: 20px;
   border-radius: 4px;
   opacity: 0.5;
-  background-color: #e9e7c8;
+  background-color: #f5f4de;
   margin: 2px !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e9e7c8;
+  background-color: #f5f4de;
   width: 40px;
   border-radius: 4px;
   opacity: 1;
@@ -582,7 +582,7 @@ content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 600px;
+  height: 500px;
 }
 
 .MainSlider .MainSlider-container .swiper-slide::after {
@@ -820,6 +820,7 @@ content {
   border-radius: 70px 4px 70px;
   position: relative;
   z-index: 2;
+  border: 1px solid #f5f4de;
 }
 
 .family .single .image::before {
@@ -1014,7 +1015,7 @@ content {
 }
 
 .ourSteps .content .steps {
-  border: 1px solid #e9e7c8;
+  border: 1px solid #f5f4de;
   padding: 20px 10px;
   margin-top: 50px;
   border-radius: 8px;
@@ -1031,7 +1032,7 @@ content {
   text-align: start;
   border-radius: 8px;
   padding: 5px;
-  background-color: #e9e7c8;
+  background-color: #f5f4de;
 }
 
 .ourSteps .content .steps .nav .nav-link {
@@ -1121,7 +1122,7 @@ content {
 
 .requirements .requirement {
   padding: 30px;
-  border: 1px solid #e9e7c8;
+  border: 1px solid #f5f4de;
   border-radius: 10px;
   height: 100%;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1177,10 +1178,10 @@ content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #e9e7c8;
+  border: 1px solid #f5f4de;
   margin-left: 10px;
   border-radius: 100px;
-  background: #e9e7c8;
+  background: #f5f4de;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1300,16 +1301,16 @@ content {
           align-items: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #e9e7c8;
+  border: 1px solid #f5f4de;
   border-radius: 100px;
   margin: 2px;
-  color: #e9e7c8;
+  color: #f5f4de;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .socialIcons a:hover {
-  background-color: #e9e7c8;
+  background-color: #f5f4de;
   color: #145e4e;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -1341,7 +1342,7 @@ content {
 .footer .head {
   font-weight: bold;
   text-transform: uppercase;
-  color: #e9e7c8;
+  color: #f5f4de;
   margin-bottom: 30px;
   padding-bottom: 20px;
   position: relative;
@@ -1382,7 +1383,7 @@ content {
 }
 
 .footer .Links ul li a {
-  color: #e9e7c8;
+  color: #f5f4de;
 }
 
 .footer .Links ul li a:hover {
@@ -1404,7 +1405,7 @@ content {
 }
 
 .footer .Links .more a {
-  color: #e9e7c8;
+  color: #f5f4de;
   margin-left: 10px;
 }
 
@@ -1418,7 +1419,7 @@ content {
 
 .footer .Copyright {
   padding: 20px 20px 0;
-  border-top: 1px solid #e9e7c8;
+  border-top: 1px solid #f5f4de;
   text-align: center;
   color: #ffffff;
   font-size: small;
@@ -1437,7 +1438,7 @@ content {
 }
 
 .footer .Copyright p a {
-  color: #e9e7c8;
+  color: #f5f4de;
   font-size: small;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1465,7 +1466,7 @@ content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 170px 30px 120px;
+  padding: 100px 30px 120px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
@@ -1540,7 +1541,7 @@ content {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 10px;
-  color: #e9e7c8;
+  color: #f5f4de;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -1556,7 +1557,7 @@ content {
 }
 
 .mainBanner ul li a:hover {
-  color: #e9e7c8;
+  color: #f5f4de;
 }
 
 .mainBanner ul li a.active {
@@ -1744,55 +1745,160 @@ content {
           box-shadow: 0px 10px 20px #00000030;
 }
 
-.select2.select2-container {
-  display: block;
-  width: 100% !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.arriveWorker {
+  padding: 70px 0 50px;
+  position: relative;
+  overflow: hidden;
 }
 
-.select2.select2-container .select2-selection--single {
-  min-height: 48px;
+.arriveWorker .arriveWorkerInfo {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
-.select2 .select2-selection__arrow {
-  top: 50% !important;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.arriveWorker .arriveWorkerInfo .image {
+  position: relative;
+  width: 30%;
 }
 
-.select2-results__option--selectable {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.arriveWorker .arriveWorkerInfo .image img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  border-radius: 70px 4px 70px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid #f5f4de;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: #145e4e;
-  color: #e9e7c8;
+.arriveWorker .arriveWorkerInfo .image::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  background: url(../img/dots.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: bounceIn 3s infinite ease-in-out both;
+          animation: bounceIn 3s infinite ease-in-out both;
 }
 
-.dropify-font-upload:before,
-.dropify-wrapper .dropify-message span.file-icon:before {
-  content: "\f382";
-  font-family: "Font Awesome 6 Pro";
-  font-weight: 100;
-  color: #000;
-  font-size: 26px;
+.arriveWorker .arriveWorkerInfo .info {
+  position: relative;
+  width: 70%;
+  padding: 20px;
 }
 
-.dropify-wrapper .dropify-message p {
-  text-align: center;
-  font-size: 12px;
+.arriveWorker .arriveWorkerInfo .info::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #f5f4de;
+}
+
+.arriveWorker .arriveWorkerInfo .info::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #145e4e;
+  z-index: 1;
+}
+
+.arriveWorker .arriveWorkerInfo .info h3 {
+  font-weight: bold;
+  font-size: 35px !important;
+  margin-bottom: 20px;
+  color: #145e4e;
+  position: relative;
+  z-index: 3;
+}
+
+.arriveWorker .arriveWorkerInfo .info p {
+  color: #777;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 20px;
+}
+
+.arriveWorker .arriveWorkerInfo .info h5 {
+  font-size: 20px !important;
+  color: #145e4e;
+  position: relative;
+  z-index: 3;
+}
+
+.arriveWorker .arriveWorkerInfo:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.arriveWorker .arriveWorkerInfo:nth-child(odd) .image::before {
+  right: unset;
+  left: -50px;
+  animation: heartBeat 5s infinite ease-in-out both reverse;
+}
+
+.arriveWorker .arriveWorkerInfo:nth-child(odd) .info::after {
+  left: 10px;
+  top: 10px;
+}
+
+@media (max-width: 768px) {
+  .arriveWorker .arriveWorkerInfo {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .arriveWorker .arriveWorkerInfo .image {
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .arriveWorker .arriveWorkerInfo .image img {
+    border-radius: 8px !important;
+    height: 200px;
+  }
+  .arriveWorker .arriveWorkerInfo .image::before {
+    width: 80px;
+    height: 80px;
+  }
+  .arriveWorker .arriveWorkerInfo .info {
+    margin-bottom: 40px;
+    width: 90%;
+    text-align: center !important;
+  }
+  .arriveWorker .arriveWorkerInfo .info h3 {
+    font-size: 25px !important;
+    margin-bottom: 10px !important;
+  }
+  .arriveWorker .arriveWorkerInfo .info h5 {
+    font-size: 15px !important;
+  }
+  .arriveWorker .arriveWorkerInfo:last-child .info {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 992px) {

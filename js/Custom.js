@@ -41,12 +41,9 @@ $(document).ready(function () {
 
 
 
-  var section = document.querySelectorAll(".container");
-  for (let i = 0; i < section.length; i++) {
-    function addWowDelay() {
-      $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
-    } addWowDelay();
-  }
+  function addWowDelay() {
+    $('.container .wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
+  } addWowDelay();
 
 
   //spinner

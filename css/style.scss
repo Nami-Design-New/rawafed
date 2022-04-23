@@ -97,7 +97,7 @@ body {
 }
 
 content {
-  min-height: 90vh;
+  min-height: 70vh;
   position: relative;
   display: block;
 }
@@ -1415,7 +1415,7 @@ content {
   padding: 170px 30px 120px;
   transition: $transition;
   margin-bottom: 20px;
-  background-image: linear-gradient(45deg, #13223590, #ECCFA890), url(../img/s2.jpg);
+  background-image: linear-gradient(45deg, #145e4ed5, #535e14a5), url(../img/s2.jpg);
   background-size: cover;
   background-attachment: fixed;
   animation: sky 100s infinite;

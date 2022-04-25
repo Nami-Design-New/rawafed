@@ -28,6 +28,7 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    centeredSlides: true,
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 5,

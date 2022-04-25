@@ -1906,6 +1906,7 @@ content {
   background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/policies.png);
   background-size: cover;
   text-align: center;
+  background-position: center;
 }
 
 .policies .container {
@@ -1950,6 +1951,188 @@ content {
 .policies .container .links a:hover {
   background-color: #145e4e;
   color: #f5f4de;
+}
+
+.visa {
+  padding: 100px 0 50px;
+  background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/passport-bg.webp);
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+}
+
+.visa .container {
+  max-width: 900px;
+}
+
+.visa .container h1 {
+  font-weight: bold;
+  color: #f5f4de;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+
+.visa .container h4 {
+  margin: auto;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.recruitmentVisa {
+  padding: 50px 0;
+}
+
+.recruitmentVisa .nav {
+  background-color: #f5f4de;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .recruitmentVisa .nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    z-index: 2;
+    -webkit-box-shadow: 0px 8px 24px #00000030;
+            box-shadow: 0px 8px 24px #00000030;
+  }
+}
+
+@media (max-width: 768px) {
+  .recruitmentVisa .nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.recruitmentVisa .nav .nav-link {
+  background-color: #ffffff;
+  color: #145e4e;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  border-radius: 4px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+
+.recruitmentVisa .nav .nav-link i {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.recruitmentVisa .nav .nav-link.active {
+  background-color: #145e4e;
+  color: #ffffff;
+}
+
+.recruitmentVisa .secondaryTitle {
+  font-weight: bold;
+  color: #145e4e;
+  margin-bottom: 20px;
+}
+
+.recruitmentVisa .thirdTitle {
+  margin-bottom: 20px;
+}
+
+.recruitmentVisa .step {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.recruitmentVisa .step .head {
+  background-color: #f5f4de;
+  padding: 10px 20px;
+  color: #145e4e;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.recruitmentVisa .step .info {
+  color: #777;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.recruitmentVisa .step .info::before {
+  content: "\f05a" !important;
+  font-family: "Font Awesome 6 pro";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.recruitmentVisa .step .secondaryTitle {
+  margin: 30px 0 10px;
+}
+
+.recruitmentVisa .step ul {
+  list-style: auto;
+  padding-right: 20px;
+}
+
+.recruitmentVisa .step ul ::marker {
+  color: #145e4e;
+}
+
+.recruitmentVisa .step ul li {
+  position: relative;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.recruitmentVisa .step ul li:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  right: -23px;
+  background: #ffffff;
+  border-radius: 100px;
+  border: 1px solid #145e4e;
+  z-index: -1;
+}
+
+.recruitmentVisa .requirement {
+  padding: 20px;
+  background-color: #f5f4de;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.recruitmentVisa .requirement ul {
+  list-style: auto;
+  padding-right: 20px;
+}
+
+.recruitmentVisa .requirement ul ::marker {
+  color: #145e4e;
+}
+
+.recruitmentVisa .requirement ul li {
+  position: relative;
+  padding: 10px;
+  font-size: 13px;
 }
 
 @media (min-width: 992px) {

@@ -1745,7 +1745,6 @@ content {
       }
 
       .info {
-
         &::after {
           left: 10px;
           top: 10px;
@@ -1801,6 +1800,7 @@ content {
   background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/policies.png);
   background-size: cover;
   text-align: center;
+  background-position: center;
 
   .container {
     max-width: 900px;
@@ -1810,7 +1810,6 @@ content {
       color: $secondColor;
       margin-bottom: 20px;
       line-height: 34px;
-
     }
 
     h4 {
@@ -1818,13 +1817,12 @@ content {
       line-height: 34px;
       color: $white-color;
       margin-bottom: 20px;
-
     }
 
-    .links{
+    .links {
       padding-top: 40px;
-      
-      a{
+
+      a {
         padding: 15px 25px;
         display: inline-flex;
         align-items: center;
@@ -1834,16 +1832,203 @@ content {
         margin: 10px;
         transition: $transition;
         border: 1px solid $mainColor;
-        &:hover{
+
+        &:hover {
           background-color: $mainColor;
           color: $secondColor;
         }
+      }
+    }
+  }
+}
 
+.visa {
+  padding: 100px 0 50px;
+  background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/passport-bg.webp);
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+
+  .container {
+    max-width: 900px;
+
+    h1 {
+      font-weight: bold;
+      color: $secondColor;
+      margin-bottom: 20px;
+      line-height: 34px;
+    }
+
+    h4 {
+      margin: auto;
+      line-height: 34px;
+      color: $white-color;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.recruitmentVisa {
+  padding: 50px 0;
+
+  .nav {
+    background-color: $secondColor;
+    border-radius: 8px;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+      position: sticky;
+      top: 100px;
+      z-index: 2;
+      box-shadow: $BigShadow;
+
+    }
+
+    height: fit-content;
+    transition: $transition;
+
+    @media (max-width: 768px) {
+      flex-wrap: nowrap;
+    }
+
+    .nav-link {
+      background-color: $white-color;
+      color: $mainColor;
+      box-shadow: $shadow;
+      border-radius: 4px;
+      margin: 5px;
+      transition: $transition;
+      padding: 20px;
+      text-align: center;
+      border: none;
+      width: 100%;
+
+      i {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      &.active {
+        background-color: $mainColor;
+        color: $white-color;
       }
     }
   }
 
+  .secondaryTitle {
+    font-weight: bold;
+    color: $mainColor;
+    margin-bottom: 20px;
+  }
 
+  .thirdTitle {
+    margin-bottom: 20px;
+  }
+
+  .step {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    .head {
+      background-color: $secondColor;
+      padding: 10px 20px;
+      color: $mainColor;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .info {
+      color: #777;
+      margin-bottom: 20px;
+      padding-right: 20px;
+      position: relative;
+
+      &::before {
+        content: "\f05a" !important;
+        font-family: "Font Awesome 6 pro";
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+
+    }
+
+    .secondaryTitle {
+      margin: 30px 0 10px;
+    }
+
+    ul {
+      list-style: auto;
+
+      padding-right: 20px;
+
+      ::marker {
+        color: $mainColor;
+      }
+
+      li {
+        position: relative;
+        padding: 10px;
+        font-size: 13px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 25px;
+          height: 25px;
+          top: 8px;
+          right: -23px;
+          background: $white-color;
+          border-radius: 100px;
+          border: 1px solid $mainColor;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  .requirement{
+    padding: 20px;
+    background-color: $secondColor;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    ul {
+      list-style: auto;
+
+      padding-right: 20px;
+
+      ::marker {
+        color: $mainColor;
+      }
+
+      li {
+        position: relative;
+        padding: 10px;
+        font-size: 13px;
+
+        // &:before {
+        //   position: absolute;
+        //   content: "";
+        //   display: block;
+        //   width: 25px;
+        //   height: 25px;
+        //   top: 8px;
+        //   right: -23px;
+        //   background: $white-color;
+        //   border-radius: 100px;
+        //   border: 1px solid $mainColor;
+        //   z-index: -1;
+        // }
+      }
+    }
+    
+  }
 }
 
 // //////////////////////////////////////////==================

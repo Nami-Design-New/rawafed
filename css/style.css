@@ -307,6 +307,10 @@ content {
   color: #145e4e;
 }
 
+.mainNav .language i {
+  font-size: 20px;
+}
+
 .mainNav .language .dropdown-item {
   text-align: start;
 }
@@ -1839,6 +1843,11 @@ content {
   margin-bottom: 20px;
 }
 
+.arriveWorker .arriveWorkerInfo .info a {
+  position: relative;
+  z-index: 3;
+}
+
 .arriveWorker .arriveWorkerInfo .info h5 {
   font-size: 20px !important;
   color: #145e4e;
@@ -1901,37 +1910,55 @@ content {
   }
 }
 
-.policies {
+.policies,
+.visa,
+.selectWorker,
+.recruitmentContract {
   padding: 100px 0 50px;
-  background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/policies.png);
+  background-image: linear-gradient(45deg, #000000b5, #00000066), url(../img/policies.png);
   background-size: cover;
   text-align: center;
   background-position: center;
 }
 
-.policies .container {
+.policies .container,
+.visa .container,
+.selectWorker .container,
+.recruitmentContract .container {
   max-width: 900px;
 }
 
-.policies .container h1 {
+.policies .container h1,
+.visa .container h1,
+.selectWorker .container h1,
+.recruitmentContract .container h1 {
   font-weight: bold;
   color: #f5f4de;
   margin-bottom: 20px;
   line-height: 34px;
 }
 
-.policies .container h4 {
+.policies .container h4,
+.visa .container h4,
+.selectWorker .container h4,
+.recruitmentContract .container h4 {
   margin: auto;
   line-height: 34px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.policies .container .links {
+.policies .container .links,
+.visa .container .links,
+.selectWorker .container .links,
+.recruitmentContract .container .links {
   padding-top: 40px;
 }
 
-.policies .container .links a {
+.policies .container .links a,
+.visa .container .links a,
+.selectWorker .container .links a,
+.recruitmentContract .container .links a {
   padding: 15px 25px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1948,35 +1975,24 @@ content {
   border: 1px solid #145e4e;
 }
 
-.policies .container .links a:hover {
+.policies .container .links a:hover,
+.visa .container .links a:hover,
+.selectWorker .container .links a:hover,
+.recruitmentContract .container .links a:hover {
   background-color: #145e4e;
   color: #f5f4de;
 }
 
 .visa {
-  padding: 100px 0 50px;
-  background-image: linear-gradient(45deg, #052d256b, #1b7f696b), url(../img/passport-bg.webp);
-  background-size: cover;
-  text-align: center;
-  background-position: center;
+  background-image: linear-gradient(45deg, #000000b5, #00000066), url(../img/passport-bg.webp);
 }
 
-.visa .container {
-  max-width: 900px;
+.selectWorker {
+  background-image: linear-gradient(45deg, #000000b5, #00000066), url(../img/selectWorker.jpg);
 }
 
-.visa .container h1 {
-  font-weight: bold;
-  color: #f5f4de;
-  margin-bottom: 20px;
-  line-height: 34px;
-}
-
-.visa .container h4 {
-  margin: auto;
-  line-height: 34px;
-  color: #ffffff;
-  margin-bottom: 20px;
+.recruitmentContract {
+  background-image: linear-gradient(45deg, #000000b5, #00000066), url(../img/office-files.png);
 }
 
 .recruitmentVisa {
@@ -2133,6 +2149,48 @@ content {
   position: relative;
   padding: 10px;
   font-size: 13px;
+}
+
+.available,
+.happyClients {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.available h4,
+.happyClients h4 {
+  font-weight: bold;
+  color: #145e4e;
+  margin-bottom: 30px;
+}
+
+.available .specifications,
+.happyClients .specifications {
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.available .specifications i,
+.happyClients .specifications i {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #145e4e;
+}
+
+.available .specifications h1,
+.happyClients .specifications h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #145e4e;
+}
+
+.available .specifications h5,
+.happyClients .specifications h5 {
+  white-space: nowrap;
 }
 
 @media (min-width: 992px) {

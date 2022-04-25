@@ -313,7 +313,8 @@ content {
     .dropdown-toggle {
       color: $mainColor;
     }
-    i{
+
+    i {
       font-size: 20px;
     }
 
@@ -1861,7 +1862,8 @@ content {
 .selectWorker {
   background-image: linear-gradient(45deg, #000000b5, #00000066), url(../img/selectWorker.jpg);
 }
-.recruitmentContract{
+
+.recruitmentContract {
   background-image: linear-gradient(45deg, #000000b5, #00000066), url(../img/office-files.png);
 }
 
@@ -2055,9 +2057,10 @@ content {
       margin-bottom: 30px;
       color: $mainColor;
     }
-    h1{
+
+    h1 {
       font-weight: bold;
-      margin-bottom: 20px ;
+      margin-bottom: 20px;
       color: $mainColor;
     }
 
@@ -2067,6 +2070,354 @@ content {
   }
 
 }
+
+
+.mapEarth {
+
+  .title {
+    color: $mainColor;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: '';
+      width: 95%;
+      height: 2px;
+      background-color: $secondColor;
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 100px;
+      background-color: $secondColor;
+      position: absolute;
+      left: 5%;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    a,
+    span {
+      background-color: #fdfdfd;
+      padding: 20px 30px;
+      position: relative;
+      z-index: 2;
+      border-radius: 100px;
+      border: 2px solid $secondColor;
+      font-weight: bold;
+
+      @media (max-width:768px) {
+        padding: 15px 20px;
+      }
+    }
+
+    a {
+      font-weight: normal;
+      font-size: 14px;
+      background-color: $mainColor;
+      color: $secondColor;
+      padding: 10px 15px;
+      transition: $transition;
+
+      &:hover {
+        background-color: $secondColor;
+        color: $mainColor;
+      }
+    }
+  }
+
+
+  .section-title {
+    text-align: left;
+    margin: 0 auto 25px 0;
+    max-width: 100%;
+
+    h2 {
+      padding-left: 0;
+    }
+  }
+
+  .worldMap {
+    width: 500px;
+    height: 500px;
+    order: 2;
+    position: relative;
+
+    .earth {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 80%;
+      margin: -40%;
+      background: #fff url(../img/map.png) 0 50% repeat-x;
+      background-size: auto 90%;
+      box-shadow: rgba(0, 0, 0, .05) 0 1em 2em;
+      border-radius: 100%;
+      overflow: hidden;
+      animation: map linear 90s infinite;
+    }
+
+    .orbic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+    }
+
+    .orbic svg {
+      width: 100%;
+      height: 100%;
+      vertical-align: top
+    }
+
+    #orbic_path {
+      fill: none;
+      stroke: rgba(0, 0, 0, .1);
+      stroke-linecap: round;
+      stroke-width: 4px;
+      stroke-dasharray: 1 9;
+      -webkit-animation: orbic linear 2s infinite;
+      -moz-animation: orbic linear 2s infinite;
+      animation: orbic linear 2s infinite
+    }
+
+    #orbic_dots use {
+      fill: #fff;
+      stroke: rgba(30, 144, 255, .25);
+      stroke-width: 4;
+      -webkit-animation: dots ease 1s infinite alternate;
+      -moz-animation: dots ease 1s infinite alternate;
+      animation: dots ease 1s infinite alternate
+    }
+
+    #orbic_dot1 {
+      transform: translate(50.4%, 29.6%)
+    }
+
+    #orbic_dot2 {
+      transform: translate(5%, 62.8%);
+      animation-delay: .2s !important
+    }
+
+    #orbic_dot3 {
+      transform: translate(97%, 41%);
+      animation-delay: .3s !important
+    }
+
+    #orbic_dot4 {
+      transform: translate(50%, 70.2%);
+      animation-delay: .5s !important
+    }
+
+    #orbic_dot5 {
+      transform: translate(31.5%, 51.5%);
+      animation-delay: .7s !important
+    }
+
+    #orbic_user1 {
+      transform: translate(1%, 40%) scale(.666667)
+    }
+
+    #orbic_user2 {
+      transform: translate(18%, 64%) scale(.666667)
+    }
+
+    #orbic_user3 {
+      transform: translate(39.5%, 31%) scale(.666667)
+    }
+
+    #orbic_user4 {
+      transform: translate(69%, 22%) scale(.666667)
+    }
+
+    #orbic_user5 {
+      transform: translate(75%, 53%) scale(.666667)
+    }
+
+    @-webkit-keyframes map {
+      100% {
+        background-position: 220% 50%
+      }
+    }
+
+    @-moz-keyframes map {
+      100% {
+        background-position: 220% 50%
+      }
+    }
+
+    @keyframes map {
+      100% {
+        background-position: 220% 50%
+      }
+    }
+
+    @-webkit-keyframes orbic {
+      100% {
+        stroke-dashoffset: 10
+      }
+    }
+
+    @-moz-keyframes orbic {
+      100% {
+        stroke-dashoffset: 10
+      }
+    }
+
+    @keyframes orbic {
+      100% {
+        stroke-dashoffset: 10
+      }
+    }
+
+    @-webkit-keyframes dots {
+
+      100%,
+      80% {
+        stroke: #1e90ff
+      }
+    }
+
+    @-moz-keyframes dots {
+
+      100%,
+      80% {
+        stroke: #1e90ff
+      }
+    }
+
+    @keyframes dots {
+
+      100%,
+      80% {
+        stroke: #1e90ff
+      }
+    }
+  }
+
+  @media only screen and (max-width:1000px) {
+    .worldMap {
+      width: 100%;
+      order: 2;
+      position: relative;
+
+      .earth {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: transparent;
+        background-size: 100% auto;
+        box-shadow: none;
+        border-radius: 0;
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none
+      }
+    }
+  }
+
+  @media (max-width:600px) {
+    .worldMap {
+      height: 300px;
+    }
+  }
+
+  .companyInfo {
+    margin-top: 30px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 15px;
+        display: flex;
+
+        span {
+          min-width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $mainColor;
+          border-radius: 50%;
+          transition: .3s ease-in-out;
+          color: $mainColor;
+        }
+
+        &:hover {
+          span {
+            background-color: $mainColor;
+            color: #fff;
+          }
+        }
+
+        p {
+          font-weight: bold;
+          color: $black-color;
+        }
+
+        a {
+          color: $mainColor;
+          display: block;
+          font-weight: normal;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+
+  .companyTeam {
+    margin-bottom: 50px;
+
+    .team {
+      margin: 20px 0px;
+      border-bottom: 1px solid $mainColor;
+      padding-bottom: 5px;
+
+      span {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $mainColor;
+        border-radius: 50%;
+        transition: .3s ease-in-out;
+        color: $mainColor;
+      }
+
+      &:hover {
+        span {
+          background-color: $mainColor;
+          color: #fff;
+        }
+      }
+
+      h4 {
+        display: inline-block;
+        margin: 0px 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
 
 
 // //////////////////////////////////////////==================

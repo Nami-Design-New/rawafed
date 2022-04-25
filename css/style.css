@@ -2193,6 +2193,367 @@ content {
   white-space: nowrap;
 }
 
+.mapEarth .title {
+  color: #145e4e;
+  margin-bottom: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mapEarth .title::after {
+  content: '';
+  width: 95%;
+  height: 2px;
+  background-color: #f5f4de;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.mapEarth .title::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  background-color: #f5f4de;
+  position: absolute;
+  left: 5%;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.mapEarth .title a,
+.mapEarth .title span {
+  background-color: #fdfdfd;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 2;
+  border-radius: 100px;
+  border: 2px solid #f5f4de;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .mapEarth .title a,
+  .mapEarth .title span {
+    padding: 15px 20px;
+  }
+}
+
+.mapEarth .title a {
+  font-weight: normal;
+  font-size: 14px;
+  background-color: #145e4e;
+  color: #f5f4de;
+  padding: 10px 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mapEarth .title a:hover {
+  background-color: #f5f4de;
+  color: #145e4e;
+}
+
+.mapEarth .section-title {
+  text-align: left;
+  margin: 0 auto 25px 0;
+  max-width: 100%;
+}
+
+.mapEarth .section-title h2 {
+  padding-left: 0;
+}
+
+.mapEarth .worldMap {
+  width: 500px;
+  height: 500px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: relative;
+}
+
+.mapEarth .worldMap .earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  margin: -40%;
+  background: #fff url(../img/map.png) 0 50% repeat-x;
+  background-size: auto 90%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 1em 2em;
+          box-shadow: rgba(0, 0, 0, 0.05) 0 1em 2em;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-animation: map linear 90s infinite;
+          animation: map linear 90s infinite;
+}
+
+.mapEarth .worldMap .orbic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mapEarth .worldMap .orbic svg {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.mapEarth .worldMap #orbic_path {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-linecap: round;
+  stroke-width: 4px;
+  stroke-dasharray: 1 9;
+  -webkit-animation: orbic linear 2s infinite;
+  animation: orbic linear 2s infinite;
+}
+
+.mapEarth .worldMap #orbic_dots use {
+  fill: #fff;
+  stroke: rgba(30, 144, 255, 0.25);
+  stroke-width: 4;
+  -webkit-animation: dots ease 1s infinite alternate;
+  animation: dots ease 1s infinite alternate;
+}
+
+.mapEarth .worldMap #orbic_dot1 {
+  -webkit-transform: translate(50.4%, 29.6%);
+          transform: translate(50.4%, 29.6%);
+}
+
+.mapEarth .worldMap #orbic_dot2 {
+  -webkit-transform: translate(5%, 62.8%);
+          transform: translate(5%, 62.8%);
+  -webkit-animation-delay: .2s !important;
+          animation-delay: .2s !important;
+}
+
+.mapEarth .worldMap #orbic_dot3 {
+  -webkit-transform: translate(97%, 41%);
+          transform: translate(97%, 41%);
+  -webkit-animation-delay: .3s !important;
+          animation-delay: .3s !important;
+}
+
+.mapEarth .worldMap #orbic_dot4 {
+  -webkit-transform: translate(50%, 70.2%);
+          transform: translate(50%, 70.2%);
+  -webkit-animation-delay: .5s !important;
+          animation-delay: .5s !important;
+}
+
+.mapEarth .worldMap #orbic_dot5 {
+  -webkit-transform: translate(31.5%, 51.5%);
+          transform: translate(31.5%, 51.5%);
+  -webkit-animation-delay: .7s !important;
+          animation-delay: .7s !important;
+}
+
+.mapEarth .worldMap #orbic_user1 {
+  -webkit-transform: translate(1%, 40%) scale(0.66667);
+          transform: translate(1%, 40%) scale(0.66667);
+}
+
+.mapEarth .worldMap #orbic_user2 {
+  -webkit-transform: translate(18%, 64%) scale(0.66667);
+          transform: translate(18%, 64%) scale(0.66667);
+}
+
+.mapEarth .worldMap #orbic_user3 {
+  -webkit-transform: translate(39.5%, 31%) scale(0.66667);
+          transform: translate(39.5%, 31%) scale(0.66667);
+}
+
+.mapEarth .worldMap #orbic_user4 {
+  -webkit-transform: translate(69%, 22%) scale(0.66667);
+          transform: translate(69%, 22%) scale(0.66667);
+}
+
+.mapEarth .worldMap #orbic_user5 {
+  -webkit-transform: translate(75%, 53%) scale(0.66667);
+          transform: translate(75%, 53%) scale(0.66667);
+}
+
+@-webkit-keyframes map {
+  100% {
+    background-position: 220% 50%;
+  }
+}
+
+@keyframes map {
+  100% {
+    background-position: 220% 50%;
+  }
+}
+
+@-webkit-keyframes orbic {
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+
+@keyframes orbic {
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+
+@-webkit-keyframes dots {
+  100%,
+  80% {
+    stroke: #1e90ff;
+  }
+}
+
+@keyframes dots {
+  100%,
+  80% {
+    stroke: #1e90ff;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mapEarth .worldMap {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+  }
+  .mapEarth .worldMap .earth {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: transparent;
+    background-size: 100% auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .mapEarth .worldMap {
+    height: 300px;
+  }
+}
+
+.mapEarth .companyInfo {
+  margin-top: 30px;
+}
+
+.mapEarth .companyInfo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mapEarth .companyInfo ul li {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mapEarth .companyInfo ul li span {
+  min-width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #145e4e;
+  border-radius: 50%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  color: #145e4e;
+}
+
+.mapEarth .companyInfo ul li:hover span {
+  background-color: #145e4e;
+  color: #fff;
+}
+
+.mapEarth .companyInfo ul li p {
+  font-weight: bold;
+  color: #292929;
+}
+
+.mapEarth .companyInfo ul li a {
+  color: #145e4e;
+  display: block;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.mapEarth .companyTeam {
+  margin-bottom: 50px;
+}
+
+.mapEarth .companyTeam .team {
+  margin: 20px 0px;
+  border-bottom: 1px solid #145e4e;
+  padding-bottom: 5px;
+}
+
+.mapEarth .companyTeam .team span {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #145e4e;
+  border-radius: 50%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  color: #145e4e;
+}
+
+.mapEarth .companyTeam .team:hover span {
+  background-color: #145e4e;
+  color: #fff;
+}
+
+.mapEarth .companyTeam .team h4 {
+  display: inline-block;
+  margin: 0px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 @media (min-width: 992px) {
   /* Global */
   h1 {

@@ -2234,6 +2234,30 @@ content {
     }
   }
 }
+
+.faq{
+  padding: 70px 0;
+  .accordion{
+    .accordion-button:not(.collapsed){
+      background-color: $secondColor;
+      color: $mainColor;
+      box-shadow: none !important;
+    }
+    ul{
+      list-style: auto;
+      margin: 0;
+      li{
+        margin-bottom: 20px;
+      font-size: small;
+color: #777;      
+      }
+    }
+    p{
+      font-size: small;
+      color: #777;   
+    }
+  }
+}
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================

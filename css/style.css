@@ -2795,6 +2795,33 @@ content {
   }
 }
 
+.faq {
+  padding: 70px 0;
+}
+
+.faq .accordion .accordion-button:not(.collapsed) {
+  background-color: #f5f4de;
+  color: #145e4e;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.faq .accordion ul {
+  list-style: auto;
+  margin: 0;
+}
+
+.faq .accordion ul li {
+  margin-bottom: 20px;
+  font-size: small;
+  color: #777;
+}
+
+.faq .accordion p {
+  font-size: small;
+  color: #777;
+}
+
 @media (min-width: 992px) {
   /* Global */
   h1 {

@@ -2642,6 +2642,159 @@ content {
   background-image: linear-gradient(60deg, #5d79d2d5, #145e4ed5), url(../img/worker.png);
 }
 
+.musanedRecruitment {
+  padding: 70px 0;
+}
+
+.musanedRecruitment .headTitle h4 {
+  margin-bottom: 10px;
+}
+
+.musanedRecruitment .headTitle h1 {
+  font-weight: bold;
+  color: #145e4e;
+}
+
+.musanedRecruitment .headTitle p {
+  line-height: 30px;
+  margin-top: 30px;
+  color: #777;
+}
+
+.musanedRecruitment .specifications {
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  border-radius: 4px;
+  height: 100%;
+  text-align: center;
+}
+
+.musanedRecruitment .specifications i {
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: #145e4e;
+}
+
+.musanedRecruitment .specifications h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #145e4e;
+}
+
+.musanedRecruitment .specifications h5 {
+  white-space: nowrap;
+}
+
+.musanedRecruitment .specifications p {
+  line-height: 30px;
+  margin-top: 30px;
+  color: #777;
+  min-width: 220px;
+}
+
+.musanedFees {
+  background-color: #f2f3f8;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.musanedFees .headTitle h4 {
+  margin-bottom: 10px;
+}
+
+.musanedFees p {
+  color: #777;
+  line-height: 30px;
+}
+
+.musanedFees .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.musanedFees .images img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 5px;
+  max-height: 70px;
+  border-radius: 8px;
+}
+
+.musanedApp {
+  padding: 70px 0;
+}
+
+.musanedApp .appImg {
+  text-align: center;
+}
+
+.musanedApp .appImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-height: 300px;
+}
+
+.musanedApp .info {
+  padding: 20px;
+  background-color: #f5f4de;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.musanedApp .info img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.musanedApp .info h4 {
+  color: #145e4e;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.musanedApp .info p {
+  color: #777;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.musanedApp .info .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.musanedApp .info .links img {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .musanedApp .info .links img {
+    height: 50px;
+  }
+}
+
 @media (min-width: 992px) {
   /* Global */
   h1 {

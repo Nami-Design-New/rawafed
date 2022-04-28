@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title> روافد نجد للاستقدام </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo.svg">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css">
+  <!-- img gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <div id="Header" class="sticky-top"></div>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- ================ spinner ================= -->
+    <div class="spinner">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- ================ spinner ================= -->
+    <!-- ================ select Customer Service ================= -->
+    <section class="selectCustomerService">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 p-2">
+            <div class="headTitle">
+              <h2> اختر احد مندوبي خدمة العملاء </h2>
+              <p>
+                يرجى اختيار احد ممثلي خدمة العملاء لمواصلة إتمام التعاقد واكمال الإستقدام
+              </p>
+            </div>
+            <form action="selected-customer-service.html">
+              <div class="choose">
+                <div class="customerOption">
+                  <input type="radio" class="btn-check" name="customer" id="option1">
+                  <label class="btn btn-outline" for="option1">
+                    <img src="img/avater2.png" alt="">
+                    <span> أ.منار </span>
+                  </label>
+                </div>
+                <div class="customerOption">
+                  <input type="radio" class="btn-check" name="customer" id="option2">
+                  <label class="btn btn-outline" for="option2">
+                    <img src="img/avater2.png" alt="">
+                    <span> أ.عبدالعزيز </span>
+                  </label>
+                </div>
+                <div class="customerOption">
+                  <input type="radio" class="btn-check" name="customer" id="option3">
+                  <label class="btn btn-outline" for="option3">
+                    <img src="img/avater2.png" alt="">
+                    <span> أ.أسماء </span>
+                  </label>
+                </div>
+              </div>
+              <div class=" pt-4 p-2 text-center">
+                <button class="defaultBtn " type="submit">
+                  <p class="px-5"> تأكيد </p>
+                  <span></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /select Customer Service ================= -->
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <div id="Footer"></div>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/Custom.js"></script>
+  <script>
+    $('#Header').load("Header.html");
+    $('#Footer').load("Footer.html");
+    // goBack
+    function goBack() {
+      window.history.back();
+    };
+  </script>
+</body>
+
+</html>

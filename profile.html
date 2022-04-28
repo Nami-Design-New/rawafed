@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title> روافد نجد للاستقدام </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo.svg">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css">
+  <!-- img gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <div id="Header" class="sticky-top"></div>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- ================ spinner ================= -->
+    <div class="spinner">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- ================ spinner ================= -->
+    <!-- ================ profile ================= -->
+    <section class="profile">
+      <div class="NavBack"></div>
+      <div class="container ">
+        <!-- user Header  -->
+        <div class=" userHeader">
+          <div class="userInfo">
+            <img src="img/user.jpg" alt="">
+            <span> محمود الكومي </span>
+            <div class="control">
+              <a href="index.html" data-bs-toggle="tooltip" title="Logout"><i class="fas fa-power-off"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- /user Header  -->
+        <div class="row">
+          <div class="col-md-3 p-1">
+            <div class="profileNavCol">
+              <a class="active" href="profile.html"> <i class="fas fa-books me-2"></i> My lawsuits </a>
+              <a href="profile-notifications.html"> <i class="fas fa-bell me-2"></i> Notifications </a>
+              <a href="profile-edit.html"><i class="fas fa-cog me-2"></i> Edit Profile </a>
+              <a href="index.html"><i class="fas fa-power-off me-2"></i> Logout </a>
+            </div>
+          </div>
+          <div class=" col-md-9 p-2 profileContent">
+            <!-- content -->
+            <div class="row">
+              <div class="col-md-6 p-2">
+                <div class="case">
+                  <h4 class="caseTitle"> <a href="case-details.html"> company case </a> <span class="ms-2"> New </span>
+                  </h4>
+                  <h6 class="type"> <i class="fas fa-gavel me-2"></i> case Type : <span class="ms-2"> Criminal </span>
+                  </h6>
+                  <h6 class="date"> <i class="fas fa-calendar-alt me-2"></i> Last update : <span
+                      class="ms-2">02/02/2022</span> <a class="ms-auto" href="case-details.html"> Details </a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /profile ================= -->
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <div id="Footer"></div>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/Custom.js"></script>
+  <script>
+    $('#Header').load("Header.html");
+    $('#Footer').load("Footer.html");
+    // goBack
+    function goBack() {
+      window.history.back();
+    };
+  </script>
+</body>
+
+</html>

@@ -1575,7 +1575,7 @@ span.select2.select2-container.select2-container--default {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   background-color: #145e4e;
   color: #ffffff;
@@ -1656,7 +1656,7 @@ span.select2.select2-container.select2-container--default {
     margin-left: 20px;
   }
   .mainBanner ul li a {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -2976,6 +2976,436 @@ span.select2.select2-container.select2-container--default {
   background-color: #145e4e;
   color: #f5f4de;
   border: #145e4e;
+}
+
+.customOrder {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #f5f4de;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  margin-bottom: 30px;
+  border-top: 2px solid #145e4e;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .customOrder {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .customOrder a {
+    margin-top: 10px;
+  }
+}
+
+.recruitmentRequest {
+  padding: 50px 0;
+}
+
+.recruitmentRequest .headTitle h2 {
+  font-size: 30px !important;
+}
+
+@media (max-width: 768px) {
+  .recruitmentRequest .headTitle h2 {
+    font-size: 20px !important;
+  }
+}
+
+.recruitmentRequest .headTitle p {
+  color: #777;
+}
+
+.recruitmentRequest .formCard {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  border-radius: 4px;
+}
+
+.recruitmentRequest .formCard .head {
+  background-color: #f5f4de;
+  padding: 10px 20px;
+  color: #145e4e;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.recruitmentRequest .formCard .select2-container--default .select2-selection--single {
+  border-color: #ced4da;
+}
+
+.recruitmentRequest .hint {
+  color: #777;
+  font-size: 10px;
+}
+
+.recruitmentRequest .hint a {
+  font-weight: bold;
+  color: #145e4e;
+  font-size: 10px !important;
+}
+
+.recruitmentRequest .form-check-label {
+  font-size: small;
+}
+
+.selectCustomerService {
+  padding: 70px 0;
+}
+
+.selectCustomerService .headTitle h2 {
+  font-size: 30px !important;
+}
+
+@media (max-width: 768px) {
+  .selectCustomerService .headTitle h2 {
+    font-size: 20px !important;
+  }
+}
+
+.selectCustomerService .headTitle p {
+  color: #777;
+}
+
+.selectCustomerService .choose {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.selectCustomerService .choose .customerOption {
+  width: 100%;
+}
+
+.selectCustomerService .choose .btn {
+  padding: 15px 20px;
+  border: 1px solid #d2d6da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 96%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.selectCustomerService .choose .btn img {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.selectCustomerService .choose .btn span {
+  text-transform: capitalize;
+}
+
+.selectCustomerService .choose .btn-check:active + .btn-outline,
+.selectCustomerService .choose .btn-check:checked + .btn-outline,
+.selectCustomerService .choose .btn-outline.active,
+.selectCustomerService .choose .btn-outline.dropdown-toggle.show,
+.selectCustomerService .choose .btn-outline:active {
+  background-color: #f5f4de;
+  color: #145e4e;
+  border: 1px solid #145e4e;
+}
+
+.contactCustomerService {
+  padding: 70px 0;
+}
+
+.contactCustomerService .hint {
+  background-color: #f5f4de;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contactCustomerService .hint h6 {
+  line-height: 30px;
+}
+
+.contactCustomerService .hint span {
+  font-weight: bold;
+  color: #145e4e;
+  padding: 0px 5px;
+}
+
+.contactCustomerService .customerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+}
+
+.contactCustomerService .customerInfo .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactCustomerService .customerInfo .info img {
+  height: 80px;
+  width: 80px;
+  margin: 0 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contactCustomerService .customerInfo .info .text h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #145e4e;
+}
+
+.contactCustomerService .customerInfo .contact {
+  text-align: center;
+}
+
+.contactCustomerService .customerInfo .contact a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid #145e4e;
+  color: #145e4e;
+  margin: 5px;
+}
+
+.contactCustomerService .customerInfo .contact a i {
+  font-size: 20px;
+}
+
+.contactCustomerService .customerInfo .contact a:hover {
+  background-color: #145e4e;
+  color: #f5f4de;
+}
+
+.profile .NavBack {
+  background-image: linear-gradient(45deg, #13223590, #ECCFA890), url(../img/sky.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 120px;
+  margin-bottom: 50px;
+}
+
+.profile .userHeader {
+  margin: 20px 0px;
+  background-color: #ffffff;
+  color: #145e4e;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile .userHeader {
+    padding: 10px;
+  }
+}
+
+.profile .userHeader .userInfo {
+  position: relative;
+  margin: 0px 10px;
+}
+
+.profile .userHeader .userInfo img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 100%;
+  border: 3px solid #f5f4de;
+}
+
+.profile .userHeader .userInfo span {
+  margin: 0px 20px;
+  font-size: 18px;
+}
+
+.profile .userHeader .userInfo .control {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.profile .userHeader .userInfo .control i {
+  font-size: 28px;
+  color: red;
+  cursor: pointer;
+}
+
+.profile .userHeader .userInfo .control .switch {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  margin: -3px 10px;
+}
+
+.profile .userHeader .userInfo .control .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.profile .userHeader .userInfo .control .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  margin: 0px !important;
+}
+
+.profile .userHeader .userInfo .control .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  right: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.profile .userHeader .userInfo .control .switch input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.profile .userHeader .userInfo .control .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.profile .userHeader .userInfo .control .switch input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+
+@media (max-width: 760px) {
+  .profile .userHeader .container {
+    padding: 0px !important;
+  }
+  .profile .userHeader .userInfo {
+    padding: 20px 10px;
+  }
+  .profile .userHeader .userInfo img {
+    width: 80px;
+    height: 80px;
+  }
+  .profile .userHeader .userInfo span {
+    margin: 0px 10px;
+  }
+}
+
+.profile .profileNavCol {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.profile .profileNavCol a {
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #145e4e;
+  margin: 5px 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  border: 1px solid #f5f4de;
+}
+
+.profile .profileNavCol a i {
+  margin-right: 5px;
+}
+
+.profile .profileNavCol a.active, .profile .profileNavCol a:hover {
+  background-color: #145e4e;
+  color: #f5f4de;
+}
+
+@media (max-width: 760px) {
+  .profile .profileNavCol a {
+    padding: 8px 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 3px 1px;
+    -webkit-box-shadow: 0px 2px 4px 0px #00000020;
+            box-shadow: 0px 2px 4px 0px #00000020;
+    border-radius: 100px;
+    border-bottom: 1px solid #f5f4de;
+  }
+}
+
+.profile .profileTitle {
+  background-color: #F8F8F8;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {

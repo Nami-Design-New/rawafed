@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title> روافد نجد للاستقدام </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo.svg">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css">
+  <!-- img gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <div id="Header" class="sticky-top"></div>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- ================ spinner ================= -->
+    <div class="spinner">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- ================ spinner ================= -->
+    <!-- Main Banner  -->
+    <section class="mainBanner">
+      <button onclick="goBack()" class="Back">
+        <i class="fas fa-angle-left"></i>
+      </button>
+      <ul>
+        <li>
+          <a href="index.html"> الرئيسية </a>
+        </li>
+        <li>
+          <a href="all-workers_cv.html"> طلب استقدام </a>
+        </li>
+        <li>
+          <a href="#!" class="active"> تقديم طلب خاص</a>
+        </li>
+      </ul>
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 300 100"
+          style="margin-bottom:-35px;enable-background:new 0 0 300 100" class="injected-svg js-svg-injector"
+          data-parent="#SVGwave1BottomSMShape">
+          <g>
+            <path class="wave-bottom-1-sm-0" fill="#fdfdfd" opacity=".8"
+              d="M10.9,63.9c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7C293.7,41,315,61.2,315,61.2v54.4H10.9V63.9z">
+            </path>
+            <path class="wave-bottom-1-sm-0" fill="#fdfdfd" opacity=".6"
+              d="M-55.7,64.6c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7c48.7-4.1,69.9,16.2,69.9,16.2v54.4H-55.7     V64.6z">
+            </path>
+            <path class="wave-bottom-1-sm-0 " fill="#fdfdfd" opacity=".4" fill-opacity="0"
+              d="M23.4,118.3c0,0,48.3-68.9,109.1-68.9c65.9,0,98,67.9,98,67.9v3.7H22.4L23.4,118.3z"></path>
+            <path class="wave-bottom-1-sm-0" fill="#fdfdfd"
+              d="M-54.7,83c0,0,56-45.7,120.3-27.8c81.8,22.7,111.4,6.2,146.6-4.7c53.1-16.4,104,36.9,104,36.9l1.3,36.7l-372-3     L-54.7,83z">
+            </path>
+          </g>
+        </svg>
+      </figure>
+    </section>
+    <!-- Main Banner  -->
+    <!-- ================ recruitment Request ================= -->
+    <section class="recruitmentRequest">
+      <div class="container">
+        <div class="headTitle">
+          <h2> طلب استقدام العمالة المنزلية </h2>
+          <p>
+            يسرنا أن نرحب بك للاطلاع على خدماتنا، نحن نسعى جاهدين لتقديم أفضل خدمات الإستقدام للعمالة المنزلية. لتقديم
+            طلب إستقدام العمالة المنزلية نرجو تعبئة كامل البيانات بشكل صحيح
+          </p>
+        </div>
+        <!-- recruitment Request Form -->
+        <form action="" class="recruitmentRequestForm">
+          <div class="row justify-content-center">
+            <div class="col-md-4 pb-3 p-2">
+              <!-- formCard -->
+              <div class="formCard">
+                <div class="head">
+                  <h5> بيانات صاحب العمل </h5>
+                </div>
+                <div class="row">
+                  <div class="col-12 pb-3 p-2">
+                    <label for="name" class="form-label"> <i class="fas fa-user me-2"></i> الاسم كامل </label>
+                    <input type="text" class="form-control" id="name" placeholder=" ادخل الاسم كامل ">
+                  </div>
+                  <div class="col-12 pb-3 p-2">
+                    <label for="Phone" class="form-label"> <i class="fas fa-phone-alt me-2"></i> رقم الهاتف </label>
+                    <input type="number" class="form-control" id="Phone" placeholder="05***********">
+                  </div>
+                  <div class="col-12 pb-3 p-2">
+                    <label for="city" class="form-label"> <i class="fa-solid fa-city me-2"></i> المدينه </label>
+                    <select name="" id="city" class="select2">
+                      <option value=""> جدة </option>
+                      <option value=""> الرياض </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 pb-3 p-2">
+              <!-- formCard -->
+              <div class="formCard">
+                <div class="head">
+                  <h5> بيانات العامل المنزلى </h5>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 pb-3 p-2">
+                    <label for="" class="form-label"> رقم التأشيرة </label>
+                    <input type="text" class="form-control" id="" placeholder=" ادخل رقم التأشيرة  ">
+                    <span class="hint">فى حالة عدم اصدار تأشيرة بعد يمكنك التعرف عن طريق <a href="visa.html">إصدار
+                        التأشيرة </a> </span>
+                  </div>
+                  <div class="col-sm-6 pb-3 p-2">
+                    <label for="" class="form-label"> الجنسية المطلوبة </label>
+                    <select name="" id="" class="select2">
+                      <option value="" selected disabled> اختار </option>
+                      <option value=""> بنجلادش </option>
+                      <option value=""> كينيا </option>
+                      <option value=""> الفليبين </option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 pb-3 p-2">
+                    <label for="" class="form-label"> المهنة المطلوبة </label>
+                    <select name="" id="" class="select2">
+                      <option value="" selected disabled> اختار </option>
+                      <option value=""> اختيار 1 </option>
+                      <option value=""> اختيار 2 </option>
+                      <option value=""> اختيار 3 </option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 pb-3 p-2">
+                    <label for="" class="form-label"> الحالة الاجتماعية المطلوبة </label>
+                    <select name="" id="" class="select2">
+                      <option value="" selected disabled> اختار </option>
+                      <option value=""> اختيار 1 </option>
+                      <option value=""> اختيار 2 </option>
+                      <option value=""> اختيار 3 </option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 pb-3 p-2">
+                    <label for="" class="form-label"> العمر المطلوب </label>
+                    <select name="" id="" class="select2">
+                      <option value="" selected disabled> اختار </option>
+                      <option value=""> اختيار 1 </option>
+                      <option value=""> اختيار 2 </option>
+                      <option value=""> اختيار 3 </option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4 pb-3 p-2">
+                    <label for="" class="form-label"> ديانة العامل </label>
+                    <div class="pt-1">
+                      <div class="form-check px-4">
+                        <input class="form-check-input" type="radio" name="religion" id="religion1">
+                        <label class="form-check-label" for="religion1">
+                          مسلم
+                        </label>
+                      </div>
+                      <div class="form-check px-4">
+                        <input class="form-check-input" type="radio" name="religion" id="religion2" checked>
+                        <label class="form-check-label" for="religion2">
+                          مسيحي
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 pb-3 p-2">
+                    <label for="" class="form-label"> اللغة التى يتحدث بها العامل </label>
+                    <div class="pt-1">
+                      <div class="form-check px-4">
+                        <input class="form-check-input" type="radio" name="language" id="language1">
+                        <label class="form-check-label" for="language1">
+                          عربي
+                        </label>
+                      </div>
+                      <div class="form-check px-4">
+                        <input class="form-check-input" type="radio" name="language" id="language2" checked>
+                        <label class="form-check-label" for="language2">
+                          انجليزي
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 pb-3 p-2">
+                    <label for="" class="form-label"> حالة العامل </label>
+                    <div class="pt-1">
+                      <div class="form-check px-4">
+                        <input class="form-check-input" type="radio" name="status" id="status1">
+                        <label class="form-check-label" for="status1">
+                          قادم جديد
+                        </label>
+                      </div>
+                      <div class="form-check px-4">
+                        <input class="form-check-input" type="radio" name="status" id="status2" checked>
+                        <label class="form-check-label" for="status2">
+                          لدية خبرة سابقة
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 pb-3 p-2">
+                    <label for="" class="form-label"> متطلبات اخرى </label>
+                    <textarea name="" id="" class="form-control" rows="5"
+                      placeholder="هل لديك متطلبات خاصة للعامل؟"></textarea>
+                  </div>
+                </div>
+                <!-- submit -->
+                <div class="col-12 pt-4 p-2 text-center">
+                  <button class="defaultBtn " type="submit">
+                    <p class="px-5"> ارسال </p>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- ================ /recruitment Request ================= -->
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <div id="Footer"></div>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/Custom.js"></script>
+  <script>
+    $('#Header').load("Header.html");
+    $('#Footer').load("Footer.html");
+    // goBack
+    function goBack() {
+      window.history.back();
+    };
+  </script>
+</body>
+
+</html>

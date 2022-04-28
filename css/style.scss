@@ -140,8 +140,6 @@ span.select2.select2-container.select2-container--default {
   padding: 10px 20px;
 }
 
-
-
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -1476,7 +1474,7 @@ span.select2.select2-container.select2-container--default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     background-color: $mainColor;
     color: $white-color;
@@ -1552,7 +1550,7 @@ span.select2.select2-container.select2-container--default {
     ul {
       li {
         a {
-          font-size: 16px;
+          font-size: 16px !important;
         }
       }
     }
@@ -2714,9 +2712,7 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
-
 .workerCv {
-
   padding: 10px;
   border: 1px solid $secondColor;
   background-color: $white-color;
@@ -2735,9 +2731,7 @@ span.select2.select2-container.select2-container--default {
       width: 100%;
       cursor: zoom-in;
     }
-
   }
-
 
   .swiper-button-prev,
   .swiper-button-next {
@@ -2754,7 +2748,6 @@ span.select2.select2-container.select2-container--default {
     &::before {
       font-weight: 300;
       font-size: 20px;
-
     }
   }
 
@@ -2779,9 +2772,7 @@ span.select2.select2-container.select2-container--default {
         margin-right: 5px;
       }
     }
-
   }
-
 }
 
 .pagination {
@@ -2797,11 +2788,391 @@ span.select2.select2-container.select2-container--default {
     background-color: $mainColor;
     color: $secondColor;
 
-   .page-link {
+    .page-link {
       background-color: $mainColor;
       color: $secondColor;
       border: $mainColor;
     }
+  }
+}
+
+.customOrder {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: $secondColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  margin-bottom: 30px;
+  border-top: 2px solid $mainColor;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+
+    a {
+      margin-top: 10px;
+    }
+  }
+}
+
+.recruitmentRequest {
+  padding: 50px 0;
+
+  .headTitle {
+    h2 {
+      font-size: 30px !important;
+
+      @media (max-width: 768px) {
+        font-size: 20px !important;
+      }
+    }
+
+    p {
+      color: #777;
+    }
+  }
+
+  .formCard {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: $shadow;
+    border-radius: 4px;
+
+    .head {
+      background-color: $secondColor;
+      padding: 10px 20px;
+      color: $mainColor;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .select2-container--default .select2-selection--single {
+      border-color: #ced4da;
+    }
+  }
+
+  .hint {
+    color: #777;
+    font-size: 10px;
+
+    a {
+      font-weight: bold;
+      color: $mainColor;
+      font-size: 10px !important;
+    }
+  }
+
+  .form-check-label {
+    font-size: small;
+  }
+}
+
+.selectCustomerService {
+  padding: 70px 0;
+
+  .headTitle {
+    h2 {
+      font-size: 30px !important;
+
+      @media (max-width: 768px) {
+        font-size: 20px !important;
+      }
+    }
+
+    p {
+      color: #777;
+    }
+  }
+
+  .choose {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    .customerOption {
+      width: 100%;
+    }
+
+    .btn {
+      padding: 15px 20px;
+      border: 1px solid #d2d6da;
+      box-shadow: none;
+      width: 96%;
+      background-color: $white-color;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      img {
+        height: 80px;
+        width: 80px;
+        margin: 0 auto 20px;
+        object-fit: contain;
+      }
+
+      span {
+        text-transform: capitalize;
+      }
+    }
+
+    .btn-check:active+.btn-outline,
+    .btn-check:checked+.btn-outline,
+    .btn-outline.active,
+    .btn-outline.dropdown-toggle.show,
+    .btn-outline:active {
+      background-color: $secondColor;
+      color: $mainColor;
+      border: 1px solid $mainColor;
+    }
+  }
+}
+
+.contactCustomerService {
+  padding: 70px 0;
+
+  .hint {
+    background-color: $secondColor;
+    border-radius: 8px;
+    padding: 20px;
+
+    h6 {
+      line-height: 30px;
+    }
+
+    span {
+      font-weight: bold;
+      color: $mainColor;
+      padding: 0px 5px;
+    }
+  }
+
+  .customerInfo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    box-shadow: $shadow;
+
+    .info {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 80px;
+        width: 80px;
+        margin: 0 20px;
+        object-fit: contain;
+      }
+
+      .text {
+        h5 {
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: $mainColor;
+        }
+      }
+    }
+
+    .contact {
+      text-align: center;
+
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 100px;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+        margin: 5px;
+
+        i {
+          font-size: 20px;
+        }
+
+        &:hover {
+          background-color: $mainColor;
+          color: $secondColor;
+        }
+      }
+    }
+  }
+}
+
+// profile
+.profile {
+  .NavBack {
+    background-image: linear-gradient(45deg, #13223590, #ECCFA890), url(../img/sky.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 120px;
+    margin-bottom: 50px;
+  }
+
+  .userHeader {
+    margin: 20px 0px;
+    background-color: $white-color;
+    color: $mainColor;
+    border-radius: 20px;
+    box-shadow: $BigShadow;
+    padding: 20px;
+
+    @media (max-width:768px) {
+      padding: 10px;
+    }
+
+    .userInfo {
+      position: relative;
+      margin: 0px 10px;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100%;
+        border: 3px solid $secondColor;
+      }
+
+      span {
+        margin: 0px 20px;
+        font-size: 18px;
+      }
+
+      .control {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+
+        i {
+          font-size: 28px;
+          color: rgb(255, 0, 0);
+          cursor: pointer;
+        }
+
+        .switch {
+          position: relative;
+          width: 50px;
+          height: 28px;
+          margin: -3px 10px;
+
+          input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+            margin: 0px !important;
+
+            &:before {
+              position: absolute;
+              content: "";
+              height: 20px;
+              width: 20px;
+              right: 4px;
+              bottom: 4px;
+              background-color: white;
+              transition: .4s;
+              border-radius: 50%;
+            }
+          }
+
+          input:checked+.slider {
+            background-color: #2196F3;
+          }
+
+          input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+          }
+
+          input:checked+.slider:before {
+            transform: translateX(22px);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        padding: 0px !important;
+      }
+
+      .userInfo {
+        padding: 20px 10px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+
+        span {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+
+  .profileNavCol {
+    background-color: $white-color;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #ccc;
+
+    a {
+      padding: 13px;
+      display: flex;
+      align-items: center;
+      color: $mainColor;
+      margin: 5px 1px;
+      transition: $transition;
+      border-radius: 4px;
+      border: 1px solid $secondColor;
+
+      i {
+        margin-right: 5px;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $mainColor;
+        color: $secondColor;
+      }
+    }
+
+    @media (max-width: 760px) {
+      a {
+        padding: 8px 10px;
+        display: inline-flex;
+        margin: 3px 1px;
+        box-shadow: 0px 2px 4px 0px #00000020;
+        border-radius: 100px;
+        border-bottom: 1px solid $secondColor;
+      }
+    }
+  }
+
+  .profileTitle {
+    background-color: #F8F8F8;
+    padding: 10px;
+    margin-bottom: 20px;
   }
 }
 

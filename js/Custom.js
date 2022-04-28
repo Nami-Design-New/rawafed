@@ -38,13 +38,31 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
+  //Categories Slider
+  var swiper = new Swiper('.workerCvSlider', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
   // wow
-  const section = $('section');
-  for (let i = 0; i < section.length; i++) {
-    function addWowDelay() {
-      $('.wow', this).each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
-    } addWowDelay();
-  }
+  // const section = $('section');
+  // for (let i = 0; i < section.length; i++) {
+  //   function addWowDelay() {
+  //     $('.wow', this).each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
+  //   } addWowDelay();
+  // }
   // function addWowDelay() {
   //   $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
   // } addWowDelay();
@@ -52,6 +70,25 @@ $(document).ready(function () {
   $(".spinner ").fadeOut("slow");
   //WOW js
   new WOW().init();
+  // select2
+  $('.select2').select2();
+  $('.select2WithoutSearch').select2({
+    minimumResultsForSearch: -1
+  });
+  // img gallery
+  $('[data-fancybox]').fancybox({
+    buttons: [
+      "zoom",
+      // "share",
+      // "slideShow",
+      "fullScreen",
+      // "download",
+      "thumbs",
+      "close"
+    ],
+    transitionEffect: "slide",
+  });
+
   // tooltip
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

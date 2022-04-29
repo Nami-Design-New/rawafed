@@ -2,26 +2,27 @@
 <nav class="navbar mainNav navbar-expand-lg navbar-light">
   <div class="container">
     <div class=" d-flex align-items-center">
-    <a class="navbar-brand" href="index.html">
-      <img class="logo" src="img/logo.svg" />
-    </a>
-    <div class="language dropdown">
-      <a class=" dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" >
-        <i class="fa-solid fa-globe me-2"></i>
-         اللغة
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="img/logo.svg" />
       </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li>
-          <a class="dropdown-item" href="#!"> <img src="img/Flag_of_Saudi_Arabia.svg"> عربي  </a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#!"> <img src="img/Flag_of_the_United_States.svg"> English  </a>
-        </li>
+      <div class="language dropdown">
+        <a class=" dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-globe me-2"></i>
+          اللغة
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" href="#!"> <img src="img/Flag_of_Saudi_Arabia.svg"> عربي </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#!"> <img src="img/Flag_of_the_United_States.svg"> English </a>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-label="Toggle navigation" >
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navContent">
@@ -30,8 +31,8 @@
           <a class="nav-link active" href="index.html"> الرئيسية </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" >
-             خدماتنا
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+            خدماتنا
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
@@ -63,6 +64,24 @@
         <li class="nav-item">
           <a class="nav-link" href="support.html"> مركز المساعدة </a>
         </li>
+        <!-- If the user is logged in -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <!-- <i class="fas fa-user-circle fa-2x"></i> -->
+            <img class="userImg me-2" src="img/avatar.png">
+            <p> حسابي </p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="profile.html"> <i class="fa-solid fa-user-hair-mullet me-1"></i> طلبات الاستقدام </a></li>
+            <li><a class="dropdown-item" href="last-orders.html"> <i class="fa-solid fa-user-headset me-1"></i> الطلبات السابقة </a></li>
+            <li><a class="dropdown-item" href="chat.html"> <i class="fa-solid fa-comments me-1"></i> سجل المحادثات </a> </li>
+            <li><a class="dropdown-item" href="notification.html"> <i class="fas fa-bell me-1"></i> الاشعارات </a></li>
+            <li><a class="dropdown-item" href="seting.html"><i class="fas fa-cog me-1"></i> اعدادات الحساب </a></li>
+            <li><a class="dropdown-item" href="index.html"><i class="fas fa-power-off me-1"></i> تسجيل الخروج </a></li>
+          </ul>
+        </li>
+        <!-- If the user is not logged in  -->
         <li class="nav-item">
           <a class="defaultBtn " href="login.html"><span></span> تسجيل الدخول </a>
         </li>

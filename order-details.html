@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title> روافد نجد للاستقدام </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo.svg">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css">
+  <!-- img gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <div id="Header" class="sticky-top"></div>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- ================ spinner ================= -->
+    <div class="spinner">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- ================ spinner ================= -->
+    <!-- ================ profile ================= -->
+    <section class="profile">
+      <div class="container ">
+        <!-- user Header  -->
+        <div class=" userHeader">
+          <div class="userInfo">
+            <div class="d-flex flex-wrap align-items-center">
+              <img src="img/avatar.png" alt="" class="me-3">
+              <div class="userName">
+                <h3>محمد عبدالله عبدالرحمن</h3>
+                <p> 0555489846 </p>
+              </div>
+            </div>
+            <div class="control">
+              <a href="index.html" data-bs-toggle="tooltip" title=" تسجيل الخروج "><i class="fas fa-power-off"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- /user Header  -->
+        <div class="row">
+          <!-- links -->
+          <div class="col-md-4 col-lg-3 p-1">
+            <div class="profileNavCol">
+              <a class="active" href="profile.html"> <i class="fa-solid fa-user-hair-mullet me-2"></i> طلبات الاستقدام
+              </a>
+              <a href="last-orders.html"> <i class="fa-solid fa-user-headset me-2"></i> الطلبات السابقة </a>
+              <a href="chat.html"> <i class="fa-solid fa-comments me-2"></i> سجل المحادثات </a>
+              <a href="notification.html"> <i class="fas fa-bell me-2"></i> الاشعارات </a>
+              <a href="seting.html"><i class="fas fa-cog me-2"></i> اعدادات الحساب </a>
+              <a href="index.html"><i class="fas fa-power-off me-2"></i> تسجيل الخروج </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class=" col-md-8 col-lg-9 p-2 profileContent">
+            <!-- ================ routeNav ================= -->
+            <div class="routeNav">
+              <button onclick="goBack()" class="Back">
+                <i class="fas fa-angle-right"></i>
+              </button>
+              <ul>
+                <li>
+                  <a href="profile.html"> طلبات الاستقدام </a>
+                </li>
+                <li>
+                  <a href="#!" class="active"> تفاصيل الطلب </a>
+                </li>
+              </ul>
+            </div>
+            <!-- ================ /routeNav ================= -->
+            <!-- status -->
+            <div class="status">
+              <ol>
+                <li class="completed">
+                  <p>اختيار العمالة </p>
+                </li>
+                <li class="completed">
+                  <p>حجز السيره الذاتية </p>
+                </li>
+                <li class="completed">
+                  <p>اختار احد ممثلى خدمة العملاء </p>
+                </li>
+                <li>
+                  <p>ابرام التعاقد </p>
+                </li>
+                <li>
+                  <p> اصدار تاشيرة </p>
+                </li>
+                <li>
+                  <p>وصول العمالة </p>
+                </li>
+              </ol>
+            </div>
+            <!-- order -->
+            <div class="order">
+              <div class="row">
+                <div class="col-sm-6 p-2">
+                  <div class="swiper workerCvSlider ">
+                    <div class="swiper-wrapper">
+                      <!-- cv image -->
+                      <div class="swiper-slide ">
+                        <a data-fancybox="user1-CV" href="img/cv1.jpg">
+                          <img src="img/cv1.jpg" alt="">
+                        </a>
+                      </div>
+                      <!-- cv image -->
+                      <div class="swiper-slide ">
+                        <a data-fancybox="user1-CV" href="img/cv2.jpg">
+                          <img src="img/cv2.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 p-2">
+                  <ul class="info">
+                    <li>
+                      <h6> الجنسية : </h6>
+                      <p>كينيا </p>
+                    </li>
+                    <li>
+                      <h6> المهنة : </h6>
+                      <p> -- </p>
+                    </li>
+                    <li>
+                      <h6> حالة الاستقدام : </h6>
+                      <p> تم اختيار احد مسؤلى خدمة العملاء </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- customerInfo -->
+            <div class="customerInfo mt-2">
+              <div class="info">
+                <img src="img/avater2.png" alt="">
+                <div class="text">
+                  <h5> أ.منار </h5>
+                  <p>خدمة العملاء</p>
+                </div>
+              </div>
+              <div class="contact">
+                <a href="#!" target="_blank">
+                  <i class="me-2 fa-brands fa-whatsapp-square"></i>
+                  <p>تواصل عبر الواتس اب</p>
+                </a>
+                <a href="#!" target="_blank">
+                  <i class="me-2 fa-solid fa-square-phone"></i>
+                  <p>تواصل عبر الهاتف </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /profile ================= -->
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <div id="Footer"></div>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/Custom.js"></script>
+  <script>
+    $('#Header').load("Header.html");
+    $('#Footer').load("Footer.html");
+    // goBack
+    function goBack() {
+      window.history.back();
+    };
+  </script>
+</body>
+
+</html>

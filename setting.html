@@ -68,94 +68,65 @@
           <div class="col-md-4 col-lg-3 p-1">
             <div class="profileNavCol">
               <a href="profile.html"> <i class="fa-solid fa-user-hair-mullet me-2"></i> طلبات الاستقدام </a>
-              <a class="active" href="last-orders.html"> <i class="fa-solid fa-user-headset me-2"></i> سجل الطلبات </a>
+              <a href="last-orders.html"> <i class="fa-solid fa-user-headset me-2"></i> سجل الطلبات </a>
               <a href="chat.html"> <i class="fa-solid fa-comments me-2"></i> سجل المحادثات </a>
               <a href="notification.html"> <i class="fas fa-bell me-2"></i> الاشعارات </a>
-              <a href="setting.html"><i class="fas fa-cog me-2"></i> اعدادات الحساب </a>
+              <a class="active" href="setting.html"><i class="fas fa-cog me-2"></i> اعدادات الحساب </a>
               <a href="index.html"><i class="fas fa-power-off me-2"></i> تسجيل الخروج </a>
             </div>
           </div>
           <!-- content -->
           <div class=" col-md-8 col-lg-9 p-2 profileContent">
-            <!-- order  -->
-            <div class="order mb-2">
-              <div class="row">
-                <div class="col-sm-4 p-2">
-                  <div class="swiper workerCvSlider ">
-                    <div class="swiper-wrapper">
-                      <!-- cv image -->
-                      <div class="swiper-slide ">
-                        <a data-fancybox="user1-CV" href="img/cv1.jpg">
-                          <img src="img/cv1.jpg" alt="">
-                        </a>
-                      </div>
-                      <!-- cv image -->
-                      <div class="swiper-slide ">
-                        <a data-fancybox="user1-CV" href="img/cv2.jpg">
-                          <img src="img/cv2.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 p-2">
-                  <ul class="info">
-                    <li>
-                      <h6> الجنسية : </h6>
-                      <p>كينيا </p>
-                    </li>
-                    <li>
-                      <h6> المهنة : </h6>
-                      <p> -- </p>
-                    </li>
-                    <li>
-                      <h6> كود الحجز : </h6>
-                      <p> RKE2022042844 </p>
-                    </li>
-                  </ul>
-                  <h5 class="orderStatus cancel"> لقد انتهت صلاحية الحجز وتم الغاءة </h5>
-                </div>
+            <div class="editProfile">
+              <div class="head">
+                <h5> <i class="fas fa-user me-2"></i> البيانات الشخصية </h5>
               </div>
+              <form action="" class="row">
+                <div class="col-12 p-2">
+                  <label for="name" class="form-label"> <i class="fas fa-user me-2"></i> الاسم كامل </label>
+                  <input type="text" class="form-control" id="name" placeholder=" محمود جمال الكومي                  ">
+                </div>
+                <div class="col-md-12 p-2">
+                  <label class="form-label"> <i class="fas fa-city me-2"></i> المدينة </label>
+                  <select class="select2WithoutSearch">
+                    <option value=""> جدة </option>
+                    <option value=""> الرياض </option>
+                  </select>
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> الرقم السري </label>
+                  <input type="password" class="form-control" id="password" placeholder="*****">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> تأكيد الرقم السري 
+                  </label>
+                  <input type="password" class="form-control" id="repetPassword" placeholder="*****">
+                </div>
+                <div class="col-12 pt-4 p-2 text-center">
+                  <button class="defaultBtn " type="submit">
+                    <p class="px-5"> تأكيد </p>
+                    <span></span>
+                  </button>
+                </div>
+              </form>
             </div>
-            <!-- order  -->
-            <div class="order mb-2">
-              <div class="row">
-                <div class="col-sm-4 p-2">
-                  <div class="swiper workerCvSlider ">
-                    <div class="swiper-wrapper">
-                      <!-- cv image -->
-                      <div class="swiper-slide ">
-                        <a data-fancybox="user1-CV" href="img/cv1.jpg">
-                          <img src="img/cv1.jpg" alt="">
-                        </a>
-                      </div>
-                      <!-- cv image -->
-                      <div class="swiper-slide ">
-                        <a data-fancybox="user1-CV" href="img/cv2.jpg">
-                          <img src="img/cv2.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 p-2">
-                  <ul class="info">
-                    <li>
-                      <h6> الجنسية : </h6>
-                      <p>كينيا </p>
-                    </li>
-                    <li>
-                      <h6> المهنة : </h6>
-                      <p> -- </p>
-                    </li>
-                    <li>
-                      <h6> كود الحجز : </h6>
-                      <p> RKE2022042844 </p>
-                    </li>
-                  </ul>
-                  <h5 class="orderStatus done"> تم تنفيذ المهمة بنجاح </h5>
-                </div>
+            <!--  -->
+            <div class="editProfile">
+              <div class="head">
+                <h5> <i class="fas fa-key me-2"></i> إعدادات الهاتف </h5>
               </div>
+              <form action="#!" class="row">
+                <div class="col-12 p-2">
+                  <label for="Phone" class="form-label"> <i class="fas fa-phone-alt me-2"></i> رقم الهاتف </label>
+                  <input type="number" class="form-control" id="Phone" placeholder="05***********">
+                </div>
+                <div class="col-12 pt-4 p-2 text-center">
+                  <button class="defaultBtn " type="submit">
+                    <p class="px-5"> تأكيد </p>
+                    <span></span>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

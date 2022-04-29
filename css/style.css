@@ -131,8 +131,8 @@ span.select2.select2-container.select2-container--default {
 
 .select2-dropdown {
   border-radius: 4px;
-  -webkit-box-shadow: 0px 8px 24px #dadada !important;
-          box-shadow: 0px 8px 24px #dadada !important;
+  -webkit-box-shadow: 0px 8px 24px #00000030 !important;
+          box-shadow: 0px 8px 24px #00000030 !important;
   border-color: transparent;
 }
 
@@ -320,8 +320,8 @@ span.select2.select2-container.select2-container--default {
   background-color: #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   padding: 0;
 }
 
@@ -458,8 +458,8 @@ span.select2.select2-container.select2-container--default {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   padding: 5px 0;
   right: unset;
   top: 100%;
@@ -1084,8 +1084,8 @@ span.select2.select2-container.select2-container--default {
 
 .ourSteps .content {
   padding: 50px 30px;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   border-radius: 20px;
   background-color: #ffffff;
   text-align: center;
@@ -1271,14 +1271,14 @@ span.select2.select2-container.select2-container--default {
 .requirements .requirement ul li:hover .icon {
   background-color: #fff;
   border-color: #145e4e;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
 }
 
 .requirements .requirement:hover {
   background-color: #fff;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
 }
 
 .references {
@@ -1322,8 +1322,8 @@ span.select2.select2-container.select2-container--default {
 }
 
 .contactForm form:hover {
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   border: 1px solid #145e4e;
   background-color: #fff;
 }
@@ -1735,8 +1735,8 @@ span.select2.select2-container.select2-container--default {
   padding: 30px;
   margin-bottom: 50px;
   border-radius: 14px;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
 }
 
 @media (min-width: 992px) {
@@ -1818,8 +1818,8 @@ span.select2.select2-container.select2-container--default {
 .account .socialLogin .social .loginIcon:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
-  -webkit-box-shadow: 0px 10px 20px #dadada;
-          box-shadow: 0px 10px 20px #dadada;
+  -webkit-box-shadow: 0px 10px 20px #00000030;
+          box-shadow: 0px 10px 20px #00000030;
 }
 
 .arriveWorker {
@@ -2089,8 +2089,8 @@ span.select2.select2-container.select2-container--default {
     position: sticky;
     top: 100px;
     z-index: 2;
-    -webkit-box-shadow: 0px 8px 24px #dadada;
-            box-shadow: 0px 8px 24px #dadada;
+    -webkit-box-shadow: 0px 8px 24px #00000030;
+            box-shadow: 0px 8px 24px #00000030;
   }
 }
 
@@ -2104,8 +2104,8 @@ span.select2.select2-container.select2-container--default {
 .recruitmentVisa .nav .nav-link {
   background-color: #ffffff;
   color: #145e4e;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   border-radius: 4px;
   margin: 5px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2139,8 +2139,8 @@ span.select2.select2-container.select2-container--default {
 .recruitmentVisa .step {
   background-color: #fff;
   padding: 20px;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -2241,8 +2241,8 @@ span.select2.select2-container.select2-container--default {
 .happyClients .specifications {
   padding: 30px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   border-radius: 4px;
   height: 100%;
 }
@@ -2717,8 +2717,8 @@ span.select2.select2-container.select2-container--default {
 .musanedRecruitment .specifications {
   padding: 30px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   border-radius: 4px;
   height: 100%;
   text-align: center;
@@ -2898,8 +2898,8 @@ span.select2.select2-container.select2-container--default {
 }
 
 .workerCv:hover {
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
 }
 
 .workerCv .workerCvSlider {
@@ -3046,8 +3046,8 @@ span.select2.select2-container.select2-container--default {
 .recruitmentRequest .formCard {
   background-color: #fff;
   padding: 20px;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   border-radius: 4px;
 }
 
@@ -3181,8 +3181,8 @@ span.select2.select2-container.select2-container--default {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   background: #ffffff;
 }
 
@@ -3252,8 +3252,8 @@ span.select2.select2-container.select2-container--default {
   background-color: #ffffff;
   color: #145e4e;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   padding: 20px;
 }
 
@@ -3786,8 +3786,8 @@ span.select2.select2-container.select2-container--default {
 .notifications ul .notification {
   padding: 20px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -3818,8 +3818,8 @@ span.select2.select2-container.select2-container--default {
   background-color: #ffffff;
   margin-bottom: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 2px 4px #dadada;
-          box-shadow: 0px 2px 4px #dadada;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
 }
 
 .editProfile .head {
@@ -3844,8 +3844,8 @@ span.select2.select2-container.select2-container--default {
   height: 89vh;
   overflow-x: auto;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 5px #dadada;
-          box-shadow: 0px 0px 5px #dadada;
+  -webkit-box-shadow: 0px 0px 5px #00000030;
+          box-shadow: 0px 0px 5px #00000030;
   background-color: #fff;
 }
 
@@ -4001,8 +4001,8 @@ span.select2.select2-container.select2-container--default {
 }
 
 #chat .chatTop {
-  -webkit-box-shadow: 0px 3px 5px #dadada;
-          box-shadow: 0px 3px 5px #dadada;
+  -webkit-box-shadow: 0px 3px 5px #00000030;
+          box-shadow: 0px 3px 5px #00000030;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4022,8 +4022,8 @@ span.select2.select2-container.select2-container--default {
   height: 40px;
   border: 3px solid #fff;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 5px #dadada;
-          box-shadow: 0px 0px 5px #dadada;
+  -webkit-box-shadow: 0px 0px 5px #00000030;
+          box-shadow: 0px 0px 5px #00000030;
   margin: 0px 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -4058,8 +4058,8 @@ span.select2.select2-container.select2-container--default {
   background-color: #fff;
   display: block;
   padding: 10px 10px 50px;
-  -webkit-box-shadow: 0px 3px 5px #dadada;
-          box-shadow: 0px 3px 5px #dadada;
+  -webkit-box-shadow: 0px 3px 5px #00000030;
+          box-shadow: 0px 3px 5px #00000030;
   background-image: url(../img/chat.jpg);
   background-size: contain;
   height: 80vh;
@@ -4103,8 +4103,8 @@ span.select2.select2-container.select2-container--default {
   height: 40px;
   border: 3px solid #fff;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 5px #dadada;
-          box-shadow: 0px 0px 5px #dadada;
+  -webkit-box-shadow: 0px 0px 5px #00000030;
+          box-shadow: 0px 0px 5px #00000030;
   position: relative;
   right: -10px;
   top: -5px;
@@ -4124,8 +4124,8 @@ span.select2.select2-container.select2-container--default {
   display: inline-block;
   padding-bottom: 25px;
   min-width: 120px;
-  -webkit-box-shadow: 0px 3px 5px #dadada;
-          box-shadow: 0px 3px 5px #dadada;
+  -webkit-box-shadow: 0px 3px 5px #00000030;
+          box-shadow: 0px 3px 5px #00000030;
 }
 
 #chat .chatBox .chatBody .userSend .sendMassage .time {
@@ -4165,8 +4165,8 @@ span.select2.select2-container.select2-container--default {
   height: 40px;
   border: 3px solid #fff;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 5px #dadada;
-          box-shadow: 0px 0px 5px #dadada;
+  -webkit-box-shadow: 0px 0px 5px #00000030;
+          box-shadow: 0px 0px 5px #00000030;
   position: relative;
   left: -10px;
   top: -5px;
@@ -4186,8 +4186,8 @@ span.select2.select2-container.select2-container--default {
   display: inline-block;
   padding-bottom: 25px;
   min-width: 120px;
-  -webkit-box-shadow: 0px 3px 5px #dadada;
-          box-shadow: 0px 3px 5px #dadada;
+  -webkit-box-shadow: 0px 3px 5px #00000030;
+          box-shadow: 0px 3px 5px #00000030;
 }
 
 #chat .chatBox .chatBody .userReceive .sendMassage .time {
@@ -4272,8 +4272,8 @@ span.select2.select2-container.select2-container--default {
 }
 
 .chatTop {
-  -webkit-box-shadow: 0px 3px 5px #dadada;
-          box-shadow: 0px 3px 5px #dadada;
+  -webkit-box-shadow: 0px 3px 5px #00000030;
+          box-shadow: 0px 3px 5px #00000030;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4293,8 +4293,8 @@ span.select2.select2-container.select2-container--default {
   height: 40px;
   border: 3px solid #fff;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 5px #dadada;
-          box-shadow: 0px 0px 5px #dadada;
+  -webkit-box-shadow: 0px 0px 5px #00000030;
+          box-shadow: 0px 0px 5px #00000030;
   margin: 0px 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -4326,8 +4326,8 @@ span.select2.select2-container.select2-container--default {
   min-height: 50px;
   border-radius: 50%;
   background-color: #145e4e;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4356,8 +4356,8 @@ span.select2.select2-container.select2-container--default {
   min-height: 50px;
   border-radius: 50%;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 24px #dadada;
-          box-shadow: 0px 8px 24px #dadada;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
   margin-bottom: 10px;
   cursor: pointer;
 }

@@ -56,6 +56,32 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // toastr
+  toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": true,
+    "progressBar": true,
+    "positionClass": "toast-top-right",
+    "preventDuplicates": true,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  }
+  // test 
+  // setInterval(function doThisEveryTwoSeconds() {
+  //   toastr.success(" مرحبا بك في روافد نجد ");
+  // }, 1000);
+
+
+
   // wow
   // const section = $('section');
   // for (let i = 0; i < section.length; i++) {
@@ -94,5 +120,5 @@ $(document).ready(function () {
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
-  
+
 });

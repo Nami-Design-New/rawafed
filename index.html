@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
@@ -21,9 +22,12 @@
   <link rel="stylesheet" href="css/select2.min.css">
   <!-- img gallery -->
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- toastr -->
+  <link rel="stylesheet" href="css/toastr.min.css">
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!-- ================ Header ================= -->
   <div id="Header" class="sticky-top"></div>
@@ -202,7 +206,8 @@
             </a>
           </div>
           <div class="col p-2">
-            <a href="recruitment-contract.html" class="service wow fadeInUp" style="background-image: url(img/hands.webp);">
+            <a href="recruitment-contract.html" class="service wow fadeInUp"
+              style="background-image: url(img/hands.webp);">
               <i class="fa-solid fa-file-signature"></i>
               <h3 class="serviceTitle"> تعاقد الاستقدام </h3>
               <h6 class="serviceP"> دفع رسوم الاستقدام عبر التعاقد في برنامج مساند </h6>
@@ -497,6 +502,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/toastr.min.js"></script>
   <script src="js/Custom.js"></script>
   <script>
     $('#Header').load("Header.html");
@@ -506,5 +512,15 @@
       window.history.back();
     };
   </script>
+
+  <script>
+    Command: toastr["success"]("مرحبا بك في روافد نجد ")
+    // Command: toastr["info"]("مرحبا بك في روافد نجد ")
+    // Command: toastr["warning"]("مرحبا بك في روافد نجد ")
+    // Command: toastr["error"]("مرحبا بك في روافد نجد ")
+  </script>
+
+
 </body>
+
 </html>

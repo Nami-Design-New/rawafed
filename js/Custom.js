@@ -67,7 +67,7 @@ $(document).ready(function () {
     "preventDuplicates": true,
     "onclick": null,
     "showDuration": "300",
-    "hideDuration": "1000",
+    "hideDuration": "500",
     "timeOut": "5000",
     "extendedTimeOut": "1000",
     "showEasing": "swing",
@@ -75,11 +75,10 @@ $(document).ready(function () {
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
   }
-  // test
-  // setInterval(function doThisEveryTwoSeconds() {
-  //   toastr.success(" مرحبا بك في روافد نجد ");
+  // test toster
+  // setInterval(function doThisEveryOneSeconds() {
+  //   toastr.error(" مرحبا بك في روافد نجد ");
   // }, 1000);
-
 
 
   // wow
@@ -92,6 +91,8 @@ $(document).ready(function () {
   // function addWowDelay() {
   //   $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
   // } addWowDelay();
+
+
   //spinner
   $(".spinner ").fadeOut("slow");
   //WOW js

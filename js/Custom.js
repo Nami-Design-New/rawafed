@@ -75,7 +75,7 @@ $(document).ready(function () {
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
   }
-  // test 
+  // test
   // setInterval(function doThisEveryTwoSeconds() {
   //   toastr.success(" مرحبا بك في روافد نجد ");
   // }, 1000);

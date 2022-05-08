@@ -340,6 +340,7 @@ span.select2.select2-container.select2-container--default {
 
 .mainNav .navbar-brand .logo {
   height: 50px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1185,6 +1186,7 @@ span.select2.select2-container.select2-container--default {
      object-fit: contain;
   margin: 5px;
   max-height: 70px;
+  width: 100px;
   border-radius: 8px;
 }
 
@@ -1301,6 +1303,7 @@ span.select2.select2-container.select2-container--default {
 
 .references .referenceLogo img {
   height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1406,9 +1409,12 @@ span.select2.select2-container.select2-container--default {
 
 .footer .logo {
   max-height: 80px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 10px;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .footer .info {
@@ -1532,6 +1538,7 @@ span.select2.select2-container.select2-container--default {
 
 .footer .Copyright p a img {
   height: 20px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0px 5px;

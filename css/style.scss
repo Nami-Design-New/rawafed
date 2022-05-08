@@ -342,6 +342,7 @@ span.select2.select2-container.select2-container--default {
 
     .logo {
       height: 50px;
+      width: 100%;
       object-fit: contain;
     }
   }
@@ -1133,6 +1134,7 @@ span.select2.select2-container.select2-container--default {
             object-fit: contain;
             margin: 5px;
             max-height: 70px;
+            width: 100px;
             border-radius: 8px;
           }
         }
@@ -1240,6 +1242,7 @@ span.select2.select2-container.select2-container--default {
 
     img {
       height: 100%;
+      width: 100%;
       object-fit: contain;
     }
   }
@@ -1335,8 +1338,10 @@ span.select2.select2-container.select2-container--default {
 
   .logo {
     max-height: 80px;
+    width: 100%;
     object-fit: contain;
     margin-bottom: 10px;
+    object-position: right;
   }
 
   .info {
@@ -1448,6 +1453,7 @@ span.select2.select2-container.select2-container--default {
 
         img {
           height: 20px;
+          width: 100%;
           object-fit: contain;
           margin: 0px 5px;
         }

@@ -9,7 +9,8 @@ $BigShadow: 0px 8px 24px #00000030;
 
 @font-face {
   font-family: montserrat;
-  src: url(../webfonts/montserrat-Arabic-Regular.ttf);
+  font-display: swap; //swap, auto, block, fallback, optional
+  src: url(../webfonts/montserrat-Arabic-Regular.woff);
 }
 
 * {
@@ -126,13 +127,13 @@ span.select2.select2-container.select2-container--default {
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: $secondColor !important;
-  color: $mainColor !important;
+  background-color: $secondColor  !important;
+  color: $mainColor  !important;
 }
 
 .select2-dropdown {
   border-radius: 4px;
-  box-shadow: $BigShadow !important;
+  box-shadow: $BigShadow  !important;
   border-color: transparent;
 }
 
@@ -3719,7 +3720,7 @@ span.select2.select2-container.select2-container--default {
     }
 
     .default-btn {
-      color: $secondColor !important;
+      color: $secondColor  !important;
       border-radius: 0;
       position: absolute;
       left: 10px;
@@ -3734,7 +3735,7 @@ span.select2.select2-container.select2-container--default {
       }
 
       &:hover {
-        color: $white-color !important;
+        color: $white-color  !important;
       }
     }
   }
@@ -4163,10 +4164,12 @@ span.select2.select2-container.select2-container--default {
           margin-bottom: 10px;
         }
       }
-      .socialIcons{
-        a{
+
+      .socialIcons {
+        a {
           background-color: $mainColor;
-          &:hover{
+
+          &:hover {
             background-color: $secondColor;
             color: $mainColor;
           }

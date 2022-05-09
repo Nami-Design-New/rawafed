@@ -88,9 +88,10 @@ $(document).ready(function () {
   //     $('.wow', this).each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
   //   } addWowDelay();
   // }
-  // function addWowDelay() {
-  //   $('.wow').each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
-  // } addWowDelay();
+
+  function addWowDelay() {
+    $(' .services .wow').each(function (i) { d = i * 0.05; $(this).attr('data-wow-delay', d + "s"); });
+  } addWowDelay();
 
 
   //spinner

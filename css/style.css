@@ -349,6 +349,12 @@ span.select2.select2-container.select2-container--default {
   padding: 20px 12px;
 }
 
+@media (max-width: 768px) {
+  .mainNav .language {
+    padding: 10px 12px;
+  }
+}
+
 .mainNav .language .dropdown-toggle {
   color: #145e4e;
 }
@@ -521,6 +527,7 @@ span.select2.select2-container.select2-container--default {
             box-shadow: none;
     text-align: center;
     background-color: #f0f5f4;
+    margin: 10px 0;
   }
   .mainNav .dropdown:hover .dropdown-menu {
     -webkit-animation-name: unset !important;
@@ -1100,7 +1107,7 @@ span.select2.select2-container.select2-container--default {
   border-radius: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .ourSteps .content .steps {
     margin-top: 20px;
   }
@@ -1111,7 +1118,23 @@ span.select2.select2-container.select2-container--default {
   text-align: start;
   border-radius: 8px;
   padding: 5px;
+  width: 100%;
   background-color: #f5f4de;
+}
+
+@media (max-width: 575px) {
+  .ourSteps .content .steps .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: auto;
+  }
 }
 
 .ourSteps .content .steps .nav .nav-link {
@@ -1125,10 +1148,11 @@ span.select2.select2-container.select2-container--default {
   border-radius: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .ourSteps .content .steps .nav .nav-link {
     display: inline-block;
     padding: 8px;
+    white-space: nowrap;
   }
 }
 

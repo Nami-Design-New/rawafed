@@ -350,6 +350,10 @@ span.select2.select2-container.select2-container--default {
   .language {
     padding: 20px 12px;
 
+    @media (max-width:768px) {
+      padding: 10px 12px;
+    }
+
     .dropdown-toggle {
       color: $mainColor;
     }
@@ -518,6 +522,7 @@ span.select2.select2-container.select2-container--default {
         box-shadow: none;
         text-align: center;
         background-color: #f0f5f4;
+        margin: 10px 0;
       }
 
       &:hover {
@@ -1018,6 +1023,8 @@ span.select2.select2-container.select2-container--default {
       z-index: 2;
       line-height: 24px;
     }
+
+
   }
 }
 
@@ -1062,7 +1069,7 @@ span.select2.select2-container.select2-container--default {
       margin-top: 50px;
       border-radius: 8px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 575px) {
         margin-top: 20px;
       }
 
@@ -1071,7 +1078,16 @@ span.select2.select2-container.select2-container--default {
         text-align: start;
         border-radius: 8px;
         padding: 5px;
+        width: 100%;
         background-color: $secondColor;
+
+        @media (max-width: 575px) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          overflow: auto;
+
+        }
 
         .nav-link {
           display: block;
@@ -1082,9 +1098,10 @@ span.select2.select2-container.select2-container--default {
           margin-bottom: 10px;
           border-radius: 8px;
 
-          @media (max-width: 768px) {
+          @media (max-width: 575px) {
             display: inline-block;
             padding: 8px;
+            white-space: nowrap;
           }
 
           &:last-child {

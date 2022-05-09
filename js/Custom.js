@@ -90,7 +90,7 @@ $(document).ready(function () {
   // }
 
   function addWowDelay() {
-    $(' .services .wow').each(function (i) { d = i * 0.05; $(this).attr('data-wow-delay', d + "s"); });
+    $(' .services .wow').each(function (i) { d = i * 0.09; $(this).attr('data-wow-delay', d + "s"); });
   } addWowDelay();
 
 
@@ -117,6 +117,15 @@ $(document).ready(function () {
     transitionEffect: "slide",
   });
 
+    // odometer
+    $('.odometer').appear(function (e) {
+      var odo = $(".odometer");
+      odo.each(function () {
+        var countNumber = $(this).attr("data-count");
+        $(this).html(countNumber);
+      });
+    });
+    
   // tooltip
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

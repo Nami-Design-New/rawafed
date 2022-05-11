@@ -4799,7 +4799,7 @@ span.select2.select2-container.select2-container--default {
 
 .topics iframe {
   width: 100%;
-  aspect-ratio: 16/9;
+  height: 500px;
   margin-bottom: 20px;
   border: 1px solid #f5f4de;
   border-radius: 8px;

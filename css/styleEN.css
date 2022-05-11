@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   outline: none;
-  direction: rtl;
 }
 
 ::-webkit-scrollbar {
@@ -109,8 +108,8 @@ content {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  left: 1px;
-  right: unset;
+  right: 1px;
+  left: unset;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -141,6 +140,11 @@ span.select2.select2-container.select2-container--default {
   padding: 10px 20px;
 }
 
+.fa-angle-right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .defaultBtn {
   position: relative;
   display: inline-block;
@@ -159,15 +163,15 @@ span.select2.select2-container.select2-container--default {
 .defaultBtn span {
   position: absolute;
   top: 50%;
-  right: 0%;
+  left: 0%;
   display: inline-block;
   width: 0;
   height: 0;
   background-color: #ffffff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 500px;
   z-index: -1;
 }
@@ -208,7 +212,7 @@ span.select2.select2-container.select2-container--default {
   position: fixed;
   width: 100%;
   min-height: 100vh;
-  right: 0;
+  left: 0;
   top: 0;
   z-index: 99999;
 }
@@ -223,7 +227,7 @@ span.select2.select2-container.select2-container--default {
 }
 
 .spinner .sk-folding-cube .sk-cube {
-  float: left;
+  float: right;
   width: 50%;
   height: 50%;
   position: relative;
@@ -235,7 +239,7 @@ span.select2.select2-container.select2-container--default {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: #145e4e;
@@ -373,7 +377,7 @@ span.select2.select2-container.select2-container--default {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .mainNav .nav-item {
@@ -443,11 +447,11 @@ span.select2.select2-container.select2-container--default {
 
 .mainNav .dropdown .dropdown-toggle::after {
   border: none !important;
-  content: "\f104" !important;
+  content: "\f105" !important;
   font-family: "Font Awesome 6 Pro";
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin-right: 5px;
+  margin-left: 5px;
   width: 10px !important;
 }
 
@@ -469,9 +473,9 @@ span.select2.select2-container.select2-container--default {
   -webkit-box-shadow: 0px 8px 24px #00000030;
           box-shadow: 0px 8px 24px #00000030;
   padding: 5px 0;
-  right: unset;
+  left: unset;
   top: 100%;
-  left: -50%;
+  right: -50%;
   margin-top: 0;
   border: none;
 }
@@ -479,21 +483,21 @@ span.select2.select2-container.select2-container--default {
 .mainNav .dropdown .dropdown-menu a {
   border-radius: 2px;
   padding: 8px 12px;
-  padding-right: 16px;
+  padding-left: 16px;
   margin-bottom: 5px;
   position: relative;
 }
 
 .mainNav .dropdown .dropdown-menu a::before {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 50%;
   content: "";
   width: 0px;
   height: 80%;
   background-color: #145e4e;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
   -webkit-transform: translateY(-50%);
@@ -582,18 +586,18 @@ span.select2.select2-container.select2-container--default {
 }
 
 .swiper-button-prev::after {
-  content: "\f178" !important;
+  content: "\f177" !important;
 }
 
 .swiper-button-next::after {
-  content: "\f177" !important;
+  content: "\f178" !important;
 }
 
 .swiper-pagination {
   width: auto !important;
-  right: 50% !important;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  left: 50% !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-color: #13223500;
   border-radius: 4px;
   padding: 0px 10px;
@@ -658,7 +662,7 @@ span.select2.select2-container.select2-container--default {
   background-color: #00000090;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -669,12 +673,12 @@ span.select2.select2-container.select2-container--default {
   margin-top: 50px;
   padding: 20px 30px;
   max-width: 850px;
-  margin-right: 100px;
+  margin-left: 100px;
 }
 
 @media (max-width: 768px) {
   .MainSlider .MainSlider-container .swiper-slide .info {
-    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -759,7 +763,7 @@ span.select2.select2-container.select2-container--default {
 .musanedFeatures .Feature .singleFeature .info::after {
   height: 100%;
   content: "";
-  left: 0px;
+  right: 0px;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -894,7 +898,7 @@ span.select2.select2-container.select2-container--default {
 .family .single .image {
   position: relative;
   width: 50%;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .family .single .image img {
@@ -914,7 +918,7 @@ span.select2.select2-container.select2-container--default {
   width: 150px;
   height: 150px;
   position: absolute;
-  right: -50px;
+  left: -50px;
   top: -50px;
   background: url(../img/dots.webp);
   background-repeat: no-repeat;
@@ -951,13 +955,13 @@ span.select2.select2-container.select2-container--default {
 }
 
 .family .single:nth-child(even) .image {
-  margin-left: 0px;
-  margin-right: 40px;
+  margin-right: 0px;
+  margin-left: 40px;
 }
 
 .family .single:nth-child(even) .image::before {
-  right: unset;
-  left: -50px;
+  left: unset;
+  right: -50px;
   animation: heartBeat 5s infinite ease-in-out both reverse;
 }
 
@@ -1024,7 +1028,7 @@ span.select2.select2-container.select2-container--default {
   content: "";
   position: absolute;
   top: 0px;
-  left: 0px;
+  right: 0px;
   height: 100%;
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1175,7 +1179,7 @@ span.select2.select2-container.select2-container--default {
 
 .ourSteps .content .steps .tab-content {
   text-align: start;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .ourSteps .content .steps .tab-content .mainImg {
@@ -1291,7 +1295,7 @@ span.select2.select2-container.select2-container--default {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #f5f4de;
-  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 100px;
   background: #f5f4de;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1447,14 +1451,14 @@ span.select2.select2-container.select2-container--default {
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 10px;
-  -o-object-position: right;
-     object-position: right;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .footer .info {
   color: #d9d9d9;
   margin-bottom: 20px;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .footer .head {
@@ -1469,7 +1473,7 @@ span.select2.select2-container.select2-container--default {
 .footer .head::after {
   content: '';
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 50%;
   height: 2px;
@@ -1480,7 +1484,7 @@ span.select2.select2-container.select2-container--default {
 .footer .head::before {
   content: '';
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: -4px;
   width: 10px;
   height: 10px;
@@ -1519,16 +1523,16 @@ span.select2.select2-container.select2-container--default {
 .footer .Links .more p {
   color: #ffffff;
   white-space: nowrap;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer .Links .more a {
   color: #f5f4de;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer .Links .more a:last-child {
-  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .footer .Links .more a:hover {
@@ -1631,7 +1635,7 @@ span.select2.select2-container.select2-container--default {
   background-color: #145e4e;
   color: #ffffff;
   border-radius: 100%;
-  margin-left: 30px;
+  margin-right: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 20px;
@@ -1644,7 +1648,7 @@ span.select2.select2-container.select2-container--default {
 }
 
 .mainBanner .Back .fa-angle-left:before {
-  content: "\f105";
+  content: "\f104";
 }
 
 .mainBanner ul {
@@ -1672,7 +1676,7 @@ span.select2.select2-container.select2-container--default {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 18px !important;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .mainBanner ul li a:hover {
@@ -1689,7 +1693,7 @@ span.select2.select2-container.select2-container--default {
   font-size: 20px;
   font-weight: bold;
   position: absolute;
-  left: -3px;
+  right: -3px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1704,7 +1708,7 @@ span.select2.select2-container.select2-container--default {
     padding: 70px 15px 45px;
   }
   .mainBanner .Back {
-    margin-left: 20px;
+    margin-right: 20px;
   }
   .mainBanner ul li a {
     font-size: 16px !important;
@@ -1715,7 +1719,7 @@ span.select2.select2-container.select2-container--default {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  right: 0;
+  left: 0;
 }
 
 .mainBanner figure svg {
@@ -1824,7 +1828,7 @@ span.select2.select2-container.select2-container--default {
 .account .socialLogin .line::before {
   content: '';
   position: absolute;
-  right: 0;
+  left: 0;
   top: 50%;
   width: 100%;
   height: 2px;
@@ -1902,7 +1906,7 @@ span.select2.select2-container.select2-container--default {
   width: 150px;
   height: 150px;
   position: absolute;
-  right: -50px;
+  left: -50px;
   top: -50px;
   background: url(../img/dots.webp);
   background-repeat: no-repeat;
@@ -1923,7 +1927,7 @@ span.select2.select2-container.select2-container--default {
 .arriveWorker .arriveWorkerInfo .info::before {
   content: '';
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
@@ -1934,7 +1938,7 @@ span.select2.select2-container.select2-container--default {
 .arriveWorker .arriveWorkerInfo .info::after {
   content: '';
   position: absolute;
-  left: -10px;
+  right: -10px;
   top: 10px;
   width: 100%;
   height: 100%;
@@ -1978,13 +1982,13 @@ span.select2.select2-container.select2-container--default {
 }
 
 .arriveWorker .arriveWorkerInfo:nth-child(odd) .image::before {
-  right: unset;
-  left: -50px;
+  left: unset;
+  right: -50px;
   animation: heartBeat 5s infinite ease-in-out both reverse;
 }
 
 .arriveWorker .arriveWorkerInfo:nth-child(odd) .info::after {
-  left: 10px;
+  right: 10px;
   top: 10px;
 }
 
@@ -2199,7 +2203,7 @@ span.select2.select2-container.select2-container--default {
 .recruitmentVisa .step .info {
   color: #777;
   margin-bottom: 20px;
-  padding-right: 20px;
+  padding-left: 20px;
   position: relative;
 }
 
@@ -2207,7 +2211,7 @@ span.select2.select2-container.select2-container--default {
   content: "\f05a" !important;
   font-family: "Font Awesome 6 pro";
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
 }
 
@@ -2217,7 +2221,7 @@ span.select2.select2-container.select2-container--default {
 
 .recruitmentVisa .step ul {
   list-style: auto;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .recruitmentVisa .step ul ::marker {
@@ -2237,7 +2241,7 @@ span.select2.select2-container.select2-container--default {
   width: 25px;
   height: 25px;
   top: 8px;
-  right: -23px;
+  left: -23px;
   background: #ffffff;
   border-radius: 100px;
   border: 1px solid #145e4e;
@@ -2253,7 +2257,7 @@ span.select2.select2-container.select2-container--default {
 
 .recruitmentVisa .requirement ul {
   list-style: auto;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .recruitmentVisa .requirement ul ::marker {
@@ -2363,7 +2367,7 @@ span.select2.select2-container.select2-container--default {
   height: 2px;
   background-color: #f5f4de;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
@@ -2376,7 +2380,7 @@ span.select2.select2-container.select2-container--default {
   border-radius: 100px;
   background-color: #f5f4de;
   position: absolute;
-  left: 5%;
+  right: 5%;
   bottom: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
@@ -2416,13 +2420,13 @@ span.select2.select2-container.select2-container--default {
 }
 
 .mapEarth .section-title {
-  text-align: left;
+  text-align: right;
   margin: 0 auto 25px 0;
   max-width: 100%;
 }
 
 .mapEarth .section-title h2 {
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .mapEarth .worldMap {
@@ -2437,7 +2441,7 @@ span.select2.select2-container.select2-container--default {
 .mapEarth .worldMap .earth {
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 50%;
   width: 80%;
   height: 80%;
   margin: -40%;
@@ -2454,7 +2458,7 @@ span.select2.select2-container.select2-container--default {
 .mapEarth .worldMap .orbic {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -2589,7 +2593,7 @@ span.select2.select2-container.select2-container--default {
   }
   .mapEarth .worldMap .earth {
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -3051,7 +3055,7 @@ span.select2.select2-container.select2-container--default {
 
 .workerCv ul li p {
   font-weight: bold;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .pagination {
@@ -3259,7 +3263,7 @@ span.select2.select2-container.select2-container--default {
   position: absolute;
   font-size: 20px;
   top: 5px;
-  right: 10px;
+  left: 10px;
 }
 
 .contactCustomerService {
@@ -3475,7 +3479,7 @@ span.select2.select2-container.select2-container--default {
 
 .profile .userHeader .userInfo .control {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 5px;
 }
 
@@ -3502,8 +3506,8 @@ span.select2.select2-container.select2-container--default {
   position: absolute;
   cursor: pointer;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   bottom: 0;
   background-color: #ccc;
   -webkit-transition: .4s;
@@ -3517,7 +3521,7 @@ span.select2.select2-container.select2-container--default {
   content: "";
   height: 20px;
   width: 20px;
-  right: 4px;
+  left: 4px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
@@ -3564,7 +3568,7 @@ span.select2.select2-container.select2-container--default {
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
-  right: 0;
+  left: 0;
   z-index: 2;
 }
 
@@ -3585,7 +3589,7 @@ span.select2.select2-container.select2-container--default {
 }
 
 .profile .profileNavCol a i {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .profile .profileNavCol a.active, .profile .profileNavCol a:hover {
@@ -3646,7 +3650,7 @@ span.select2.select2-container.select2-container--default {
 
 .profileContent .newOrder i {
   font-size: 30px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .profileContent .newOrder:hover {
@@ -3717,7 +3721,7 @@ span.select2.select2-container.select2-container--default {
 
 .profileContent .order ul li p {
   font-weight: bold;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .profileContent .order .profileCustomerInfo {
@@ -3837,7 +3841,7 @@ span.select2.select2-container.select2-container--default {
   background-color: #f5f4de;
   color: #145e4e;
   border-radius: 100%;
-  margin-left: 30px;
+  margin-right: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 20px;
@@ -3893,7 +3897,7 @@ span.select2.select2-container.select2-container--default {
   font-size: 20px;
   font-weight: bold;
   position: absolute;
-  left: -3px;
+  right: -3px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3909,7 +3913,7 @@ span.select2.select2-container.select2-container--default {
     padding: 10px 10px;
   }
   .routeNav .Back {
-    margin-left: 20px;
+    margin-right: 20px;
   }
   .routeNav ul li a {
     font-size: 16px;
@@ -3965,7 +3969,7 @@ span.select2.select2-container.select2-container--default {
   margin: 0;
   position: absolute;
   top: 12px;
-  right: calc(50% + 12px);
+  left: calc(50% + 12px);
 }
 
 .status ol li.completed:before {
@@ -4044,7 +4048,7 @@ span.select2.select2-container.select2-container--default {
   display: block;
   border-radius: 4px;
   padding: 5px;
-  margin-left: 10px;
+  margin-right: 10px;
   height: 89vh;
   overflow-x: auto;
   width: 100%;
@@ -4093,7 +4097,7 @@ span.select2.select2-container.select2-container--default {
 @media (max-width: 992px) {
   #chat .Users {
     height: 100%;
-    right: 0;
+    left: 0;
     position: fixed;
     top: 0;
     width: 80%;
@@ -4166,8 +4170,8 @@ span.select2.select2-container.select2-container--default {
 #chat .Users ul li .userInfo .userDiv {
   color: #777;
   width: 100%;
-  padding-right: 8px;
-  margin-right: 8px;
+  padding-left: 8px;
+  margin-left: 8px;
 }
 
 #chat .Users ul li .userInfo .userDiv .nameDate {
@@ -4239,7 +4243,7 @@ span.select2.select2-container.select2-container--default {
   color: #f5f4de !important;
   border-radius: 0;
   position: absolute;
-  left: 10px;
+  right: 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -4275,7 +4279,7 @@ span.select2.select2-container.select2-container--default {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 2;
   background-color: #00000020;
 }
@@ -4299,72 +4303,10 @@ span.select2.select2-container.select2-container--default {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 #chat .chatBox .chatBody .userSend img {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #fff;
-  border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 5px #00000030;
-          box-shadow: 0px 0px 5px #00000030;
-  position: relative;
-  right: -10px;
-  top: -5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-}
-
-#chat .chatBox .chatBody .userSend .sendMassage {
-  padding: 10px;
-  background-color: #145e4e;
-  border-radius: 8px 0px 8px 8px;
-  margin-bottom: 10px;
-  position: relative;
-  color: #fff;
-  display: inline-block;
-  padding-bottom: 25px;
-  min-width: 120px;
-  -webkit-box-shadow: 0px 3px 5px #00000030;
-          box-shadow: 0px 3px 5px #00000030;
-}
-
-#chat .chatBox .chatBody .userSend .sendMassage .time {
-  position: absolute;
-  bottom: 2px;
-  left: 15px;
-  color: #f0f0f0;
-  font-size: 12px;
-}
-
-#chat .chatBox .chatBody .userSend .sendMassage:before {
-  z-index: -1;
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: auto;
-  right: -8px;
-  top: 0px;
-  bottom: auto;
-  border: 12px solid;
-  border-color: #145e4e transparent transparent transparent;
-}
-
-#chat .chatBox .chatBody .userReceive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin-right: auto;
-  direction: ltr;
-  text-align: left;
-}
-
-#chat .chatBox .chatBody .userReceive img {
   width: 40px;
   height: 40px;
   border: 3px solid #fff;
@@ -4380,10 +4322,72 @@ span.select2.select2-container.select2-container--default {
      object-position: top;
 }
 
+#chat .chatBox .chatBody .userSend .sendMassage {
+  padding: 10px;
+  background-color: #145e4e;
+  border-radius: 0px 8px 8px 8px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 25px;
+  min-width: 120px;
+  -webkit-box-shadow: 0px 3px 5px #00000030;
+          box-shadow: 0px 3px 5px #00000030;
+}
+
+#chat .chatBox .chatBody .userSend .sendMassage .time {
+  position: absolute;
+  bottom: 2px;
+  right: 15px;
+  color: #f0f0f0;
+  font-size: 12px;
+}
+
+#chat .chatBox .chatBody .userSend .sendMassage:before {
+  z-index: -1;
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: auto;
+  left: -8px;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #145e4e transparent transparent transparent;
+}
+
+#chat .chatBox .chatBody .userReceive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  direction: rtl;
+  text-align: right;
+}
+
+#chat .chatBox .chatBody .userReceive img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 5px #00000030;
+          box-shadow: 0px 0px 5px #00000030;
+  position: relative;
+  right: -10px;
+  top: -5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 #chat .chatBox .chatBody .userReceive .sendMassage {
   padding: 10px;
   background-color: #fff;
-  border-radius: 0px 8px 8px 8px;
+  border-radius: 8px 0px 8px 8px;
   margin-bottom: 10px;
   position: relative;
   color: #000;
@@ -4397,7 +4401,7 @@ span.select2.select2-container.select2-container--default {
 #chat .chatBox .chatBody .userReceive .sendMassage .time {
   position: absolute;
   bottom: 2px;
-  left: 15px;
+  right: 15px;
   color: #c7c7c7;
   font-size: 12px;
 }
@@ -4408,8 +4412,8 @@ span.select2.select2-container.select2-container--default {
   position: absolute;
   width: 0;
   height: 0;
-  right: auto;
-  left: -8px;
+  left: auto;
+  right: -8px;
   top: 0px;
   bottom: auto;
   border: 12px solid;
@@ -4420,7 +4424,7 @@ span.select2.select2-container.select2-container--default {
   position: absolute;
   bottom: 0;
   width: 100%;
-  right: 0;
+  left: 0;
   z-index: 4;
 }
 
@@ -4438,15 +4442,13 @@ span.select2.select2-container.select2-container--default {
 #chat .chatBox .chat-input .chat-submit {
   position: absolute;
   bottom: 3px;
-  left: 10px;
+  right: 10px;
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
   border-radius: 50%;
   color: #145e4e;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
   width: 35px;
   height: 35px;
 }
@@ -4508,7 +4510,7 @@ span.select2.select2-container.select2-container--default {
 
 .support {
   position: fixed;
-  left: 10px;
+  right: 10px;
   bottom: 20px;
   z-index: 999;
   background-color: #f5f4de;
@@ -4591,7 +4593,7 @@ span.select2.select2-container.select2-container--default {
 
 .blogsPage .blog .date {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   background-color: #145e4e;
   color: #f5f4de;
@@ -4799,7 +4801,7 @@ span.select2.select2-container.select2-container--default {
 
 .topics iframe {
   width: 100%;
-  aspect-ratio: 16/9;
+  height: 500px;
   margin-bottom: 20px;
   border: 1px solid #f5f4de;
   border-radius: 8px;

@@ -448,14 +448,17 @@
               <h2> تواصل معنا </h2>
               <p> اطلب عاملتك الان وسيقوم فريق خدمة العملاء لدينا بالتواصل معك بأسرع وقت ... </p>
             </div>
-            <form action="" class="row">
+            <form action="" class="row needs-validation" novalidate>
               <div class="col-md-12 p-2">
                 <label class="form-label"> <i class="fas fa-user me-2"></i> الاسم كامل* </label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" required>
+                <div class="invalid-feedback"> هذا الحقل ضروري </div>
+                <div class="valid-feedback"> جيد </div>
               </div>
               <div class="col-md-6 p-2">
                 <label class="form-label"><i class="fas fa-phone-alt me-2"></i> رقم الهاتف * </label>
-                <input type="number" class="form-control">
+                <input type="number" class="form-control" required>
+                <div class="invalid-feedback"> هذا الحقل ضروري </div>
               </div>
               <div class="col-md-6 p-2">
                 <label class="form-label"> <i class="fa-solid fa-comment-lines me-2"></i> الموضوع </label>
@@ -463,14 +466,16 @@
               </div>
               <div class="col-md-12 p-2">
                 <label class="form-label"> <i class="fas fa-feather-alt me-2"></i> اكتب رسالتك* </label>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea class="form-control" rows="5" required></textarea>
+                <div class="invalid-feedback"> هذا الحقل ضروري </div>
               </div>
               <div class="col-md-12 text-center p-2">
-                <button type="submit" class="defaultBtn"> ارسال <i class="fas fa-paper-plane ms-2"></i>
+                <button type="submit" class="defaultBtn"> ارسال <i class="fas fa-paper-plane ms-2" ></i>
                   <span></span>
                 </button>
               </div>
             </form>
+            
           </div>
           <div class="col-md-6 p-2 wow fadeInUp">
             <section class="googleMap ">

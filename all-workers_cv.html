@@ -52,13 +52,14 @@
     <section class="filter">
       <div class="container">
         <h4 class="px-3"> بحث متقدم </h4>
-        <form action="" class="row align-items-center">
+        <form action="" class="row align-items-center align-items-md-end">
           <div class="col-sm-10 col-md-8 p-2">
             <div class="row flex-wrap">
               <!-- age -->
               <div class="col p-2">
-                <select class="select2WithoutSearch">
-                  <option value="" selected disabled> العمر </option>
+                <label for="age"> <i class="fa-duotone fa-hourglass me-1"></i> العمر </label>
+                <select id="age" class="select2WithoutSearch">
+                  <option value="" selected > الكل </option>
                   <option value=""> من 20 الى 30سنة </option>
                   <option value=""> من 31 الى 40سنة </option>
                   <option value=""> من 41 الى 50سنة </option>
@@ -66,16 +67,18 @@
               </div>
               <!-- Occupation -->
               <div class="col p-2">
-                <select class="select2WithoutSearch">
-                  <option value="" selected disabled> المهنه </option>
+                <label for="job"> <i class="fa-duotone fa-briefcase me-1"></i> المهنه </label>
+                <select id="job" class="select2WithoutSearch">
+                  <option value="" selected > الكل </option>
                   <option value=""> سائق خاص </option>
                   <option value=""> عمالة منزلية</option>
                 </select>
               </div>
               <!-- Nationality -->
               <div class="col p-2">
-                <select class="select2WithoutSearch">
-                  <option value="" selected disabled> الجنسية </option>
+                <label for="nationality"> <i class="fa-duotone fa-flag me-1"></i> الجنسية </label>
+                <select id="nationality" class="select2WithoutSearch">
+                  <option value="" selected > الكل  </option>
                   <option value=""> كينيا </option>
                   <option value=""> بنجلادش </option>
                   <option value=""> الفليبين </option>
@@ -83,8 +86,11 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-2 col-md-4 p-2 text-end">
-            <button type="submit" class="defaultBtn"> تطبيق
+          <div class="col-sm-2 col-md-4 p-2 d-flex align-items-center justify-content-end flex-wrap">
+            <button type="button" class=" btn clear m-1 "> مسح
+              <span></span>
+            </button>
+            <button type="submit" class="defaultBtn m-1" > تطبيق
               <span></span>
             </button>
           </div>

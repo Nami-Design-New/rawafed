@@ -103,6 +103,8 @@ content {
   display: block;
 }
 
+
+
 .select2-container--default .select2-selection--single {
   min-height: 48px;
   display: flex;
@@ -140,6 +142,10 @@ span.select2.select2-container.select2-container--default {
 .select2-container .select2-selection--single .select2-selection__rendered {
   padding: 10px 20px;
 }
+
+// .select2-container {
+//   z-index: 1060;
+// }
 
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -1024,11 +1030,9 @@ span.select2.select2-container.select2-container--default {
       line-height: 24px;
     }
 
-    &:hover{
+    &:hover {
       background-size: 110% auto;
     }
-
-
   }
 }
 
@@ -1090,7 +1094,6 @@ span.select2.select2-container.select2-container--default {
           flex-direction: row;
           flex-wrap: nowrap;
           overflow: auto;
-
         }
 
         .nav-link {
@@ -1303,6 +1306,7 @@ span.select2.select2-container.select2-container--default {
         border-color: $mainColor;
       }
     }
+
 
     .defaultBtn {
       i {
@@ -2125,7 +2129,6 @@ span.select2.select2-container.select2-container--default {
       color: $mainColor;
       transition: $transition;
       display: block;
-
     }
 
     h1 {
@@ -2134,25 +2137,27 @@ span.select2.select2-container.select2-container--default {
       color: $mainColor;
       transition: $transition;
       display: block;
-
     }
-    .odometer-inside{
+
+    .odometer-inside {
       direction: ltr !important;
-
     }
+
     h5 {
       white-space: nowrap;
       transition: $transition;
-
     }
 
-    &:hover{
+    &:hover {
       background-color: $mainColor;
       transform: translateY(-5px);
-      i{
+
+      i {
         color: $secondColor;
       }
-      h1 ,h5{
+
+      h1,
+      h5 {
         color: $white-color;
       }
     }
@@ -2771,6 +2776,21 @@ span.select2.select2-container.select2-container--default {
   select {
     width: 100%;
   }
+
+  label {
+    margin-bottom: 8px;
+
+    i {
+      color: $mainColor;
+    }
+  }
+
+  .clear {
+    border-radius: 1000px;
+    background-color: $secondColor;
+    color: $mainColor;
+    padding: 8px 16px;
+  }
 }
 
 .workerCv {
@@ -2956,6 +2976,9 @@ span.select2.select2-container.select2-container--default {
     position: relative;
     display: flex;
     justify-content: space-around;
+    background-color: $secondColor;
+    padding: 20px;
+    border-radius: 10px;
 
     .customerOption {
       width: 100%;
@@ -2963,13 +2986,17 @@ span.select2.select2-container.select2-container--default {
 
     .btn {
       padding: 15px 20px;
-      border: 1px solid #d2d6da;
+      // border: 1px solid #d2d6da;
+      box-shadow: $shadow;
       box-shadow: none;
       width: 96%;
       background-color: $white-color;
       display: flex;
       flex-direction: column;
       height: 100%;
+      position: relative;
+      transition: $transition;
+      border: 4px solid transparent;
 
       img {
         height: 80px;
@@ -2988,24 +3015,37 @@ span.select2.select2-container.select2-container--default {
     .btn-outline.active,
     .btn-outline.dropdown-toggle.show,
     .btn-outline:active {
-      background-color: $secondColor;
+      background-color: $white-color;
       color: $mainColor;
-      border: 1px solid $mainColor;
+      border: 4px solid $mainColor;
+
+      &::after {
+        content: "\f336" !important;
+        font-family: "Font Awesome 6 Pro";
+        font-weight: bold;
+        position: absolute;
+        font-size: 20px;
+        top: 5px;
+        right: 10px;
+      }
     }
   }
 }
 
 .contactCustomerService {
   padding: 70px 0;
+}
 
-  .hint {
-    background-color: $secondColor;
-    border-radius: 8px;
-    padding: 20px;
+.selectedCustomer {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: $white-color;
+  box-shadow: $shadow;
+  margin: 10px 0;
+  text-align: center;
 
-    h6 {
-      line-height: 30px;
-    }
+  h6 {
+    line-height: 30px;
 
     span {
       font-weight: bold;
@@ -3015,18 +3055,16 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
-.customerInfo {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 20px;
-  box-shadow: $shadow;
-  background: $white-color;
-
+.selectedCustomerInfo {
   .info {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $shadow;
+    background: $white-color;
 
     img {
       height: 80px;
@@ -3045,29 +3083,150 @@ span.select2.select2-container.select2-container--default {
   }
 
   .contact {
+    padding: 10px 20px;
+    background-color: $white-color;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow;
+    height: 100%;
     text-align: center;
+    color: $black-color;
 
-    a {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 20px;
-      border-radius: 100px;
-      border: 1px solid $mainColor;
+    i {
+      font-size: 35px;
+      display: block;
+      margin-bottom: 10px;
+
+      &.fa-whatsapp-square {
+        color: #038735;
+      }
+
+      &.fa-square-phone {
+        color: #1e90ff;
+      }
+    }
+
+    &:hover {
+      background-color: $secondColor;
       color: $mainColor;
-      margin: 5px;
-
-      i {
-        font-size: 20px;
-      }
-
-      &:hover {
-        background-color: $mainColor;
-        color: $secondColor;
-      }
+      // i {
+      //   color: $mainColor  !important;
+      // }
     }
   }
 }
+
+#timer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $secondColor;
+    color: $mainColor;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+
+    span {
+      display: block;
+      font-size: 14px;
+    }
+  }
+}
+
+.pageError {
+  .notFound {
+    text-align: center;
+    padding: 50px 0;
+
+    img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: $black-color;
+      margin-bottom: 20px;
+
+      span {
+        color: $mainColor;
+        font-weight: bold;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// .customerInfo {
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   padding: 20px;
+//   box-shadow: $shadow;
+//   background: $white-color;
+
+//   .info {
+//     display: flex;
+//     align-items: center;
+
+//     img {
+//       height: 80px;
+//       width: 80px;
+//       margin: 0 20px;
+//       object-fit: contain;
+//     }
+
+//     .text {
+//       h5 {
+//         font-weight: bold;
+//         margin-bottom: 10px;
+//         color: $mainColor;
+//       }
+//     }
+//   }
+
+//   .contact {
+//     text-align: center;
+
+//     a {
+//       display: inline-flex;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 10px 20px;
+//       border-radius: 100px;
+//       border: 1px solid $mainColor;
+//       color: $mainColor;
+//       margin: 5px;
+
+//       i {
+//         font-size: 20px;
+//       }
+
+//       &:hover {
+//         background-color: $mainColor;
+//         color: $secondColor;
+//       }
+//     }
+//   }
+// }
 
 // profile
 .profile {
@@ -3232,10 +3391,20 @@ span.select2.select2-container.select2-container--default {
       a {
         padding: 8px 10px;
         display: inline-flex;
-        margin: 3px 1px;
-        // box-shadow: 0px 2px 4px 0px #00000020;
-        border-radius: 100px;
+        margin: 3px 0px;
         border-bottom: 1px solid $secondColor;
+        min-width: 49%;
+      }
+    }
+    @media (max-width: 335px) {
+      margin-bottom: 10px;
+
+      a {
+        padding: 8px 10px;
+        display: inline-flex;
+        margin: 3px 0px;
+        border-bottom: 1px solid $secondColor;
+        min-width: 100%;
       }
     }
   }

@@ -56,7 +56,6 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-
   // toastr
   toastr.options = {
     "closeButton": true,
@@ -79,8 +78,6 @@ $(document).ready(function () {
   // setInterval(function doThisEveryOneSeconds() {
   //   toastr.error(" مرحبا بك في روافد نجد ");
   // }, 1000);
-
-
   // wow
   // const section = $('section');
   // for (let i = 0; i < section.length; i++) {
@@ -88,12 +85,9 @@ $(document).ready(function () {
   //     $('.wow', this).each(function (i) { d = i * 0.1; $(this).attr('data-wow-delay', d + "s"); });
   //   } addWowDelay();
   // }
-
   function addWowDelay() {
     $(' .services .wow').each(function (i) { d = i * 0.09; $(this).attr('data-wow-delay', d + "s"); });
   } addWowDelay();
-
-
   //spinner
   $(".spinner ").fadeOut("slow");
   //WOW js
@@ -116,20 +110,32 @@ $(document).ready(function () {
     ],
     transitionEffect: "slide",
   });
-
-    // odometer
-    $('.odometer').appear(function (e) {
-      var odo = $(".odometer");
-      odo.each(function () {
-        var countNumber = $(this).attr("data-count");
-        $(this).html(countNumber);
-      });
+  // odometer
+  $('.odometer').appear(function (e) {
+    var odo = $(".odometer");
+    odo.each(function () {
+      var countNumber = $(this).attr("data-count");
+      $(this).html(countNumber);
     });
-    
+  });
   // tooltip
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
-
 });
+// validation
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()

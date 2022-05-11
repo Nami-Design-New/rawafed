@@ -1082,6 +1082,10 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
+.headTitle h1 {
+  font-weight: bold;
+}
+
 .headTitle a {
   margin-top: 20px;
 }
@@ -4730,6 +4734,85 @@ span.select2.select2-container.select2-container--default {
 
 #toast-container {
   padding-top: 63px;
+}
+
+.supportPage {
+  padding: 20px 0;
+}
+
+.supportPage .trending,
+.supportPage .supportFaq {
+  border: 1px solid #f5f4de;
+  padding: 20px;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.supportPage .trending:hover,
+.supportPage .supportFaq:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 24px #00000030;
+          box-shadow: 0px 8px 24px #00000030;
+}
+
+.supportPage .trending ul {
+  padding: 0;
+  margin: 0;
+}
+
+.supportPage .trending ul li {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  list-style: none;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.supportPage .trending ul li a {
+  color: #145e4e;
+  padding: 20px;
+  display: block;
+}
+
+.supportPage .trending ul li:hover {
+  background-color: #145e4e;
+}
+
+.supportPage .trending ul li:hover a {
+  color: #f5f4de;
+}
+
+.topics {
+  padding: 20px 0;
+}
+
+.topics h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #145e4e;
+}
+
+.topics iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 20px;
+  border: 1px solid #f5f4de;
+  border-radius: 8px;
+}
+
+.topics ul {
+  list-style: circle;
+  margin: 0;
+}
+
+.topics ul li {
+  margin-bottom: 12px;
+  color: #777;
 }
 
 @media (min-width: 992px) {

@@ -58,7 +58,7 @@
           <a href="index.html"> الرئيسية </a>
         </li>
         <li>
-          <a href="#!" class="active"> انشاء حساب </a>
+          <a href="#!" class="active"> كود التفعيل </a>
         </li>
       </ul>
       <figure>
@@ -82,41 +82,31 @@
       </figure>
     </section>
     <!-- Main Banner  -->
-    <!-- register form -->
+    <!-- login form -->
     <section class="account">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-lg-6 m-auto p-2">
             <div class="card">
-              <img class="loginImg" src="img/register.svg" alt="">
-
-              <form action="code.html" class="row">
-                <div class="col-12 p-2">
-                  <label for="name" class="form-label"> <i class="fas fa-user me-2"></i> الاسم كامل* </label>
-                  <input type="text" class="form-control" id="name" placeholder=" ادخل الاسم كامل ">
+              <img class="loginImg" src="img/code.svg" alt="">
+              <form action="profile.html" class="row">
+                <div class="col-12 p-2 text-center">
+                  <label class="form-label"> برجاء كتابة كود التفعيل المرسل الى الرقم <span> 05XXXXXX </span> </label>
+                  <div class="vCode " id="vCode" >
+                    <input type="number" class="vCode-input mx-1" maxlength="1">
+                    <input type="number" class="vCode-input mx-1" maxlength="1">
+                    <input type="number" class="vCode-input mx-1" maxlength="1">
+                    <input type="number" class="vCode-input mx-1" maxlength="1">
+                  </div>
                 </div>
-                <div class="col-12 p-2">
-                  <label for="Phone" class="form-label"> <i class="fas fa-phone-alt me-2"></i> رقم الهاتف* </label>
-                  <input type="number" class="form-control" id="Phone" placeholder="05***********">
-                </div>
-
-                <div class="col-md-6 p-2">
-                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> الرقم السري* </label>
-                  <input type="password" class="form-control" id="password" placeholder="*****">
-                </div>
-                <div class="col-md-6 p-2">
-                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> تأكيد الرقم السري *
-                  </label>
-                  <input type="password" class="form-control" id="repetPassword" placeholder="*****">
-                </div>
-                <div class="col-12 pt-4 p-2 text-center">
+                <div class="col-12 p-2 text-center">
                   <button class="defaultBtn " type="submit">
-                    <p class="px-5"> ارسال </p>
+                    <p class="px-5"> تأكيد </p>
                     <span></span>
                   </button>
                 </div>
               </form>
-              <p class="text-center pt-4 pb-2"> بالفعل لدى حساب ؟ <a href="login.html"> تسجيل الدخول </a> </p>
+              <p class="text-center pt-4 pb-2"> لم يصلنى كود التفعيل <a href="register.html"> إعادة ارسال </a> </p>
             </div>
           </div>
         </div>
@@ -154,6 +144,36 @@
     function goBack() {
       window.history.back();
     };
+  </script>
+  <script>
+    var vCode = (function () {
+      //cache dom
+      var $inputs = $("#vCode").find("input");
+      //bind events
+      $inputs.on('keyup', processInput);
+      //define methods
+      function processInput(e) {
+        var x = e.charCode || e.keyCode;
+        if ((x == 8 || x == 46) && this.value.length == 0) {
+          var indexNum = $inputs.index(this);
+          if (indexNum != 0) {
+            $inputs.eq($inputs.index(this) - 1).focus();
+          }
+        }
+        if (ignoreChar(e))
+          return false;
+        else if (this.value.length == this.maxLength) {
+          $(this).next('input').focus();
+        }
+      }
+      function ignoreChar(e) {
+        var x = e.charCode || e.keyCode;
+        if (x == 37 || x == 38 || x == 39 || x == 40)
+          return true;
+        else
+          return false
+      }
+    })();
   </script>
 </body>
 

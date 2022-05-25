@@ -260,6 +260,23 @@
     };
   </script>
   <script>
+    // The data/time we want to countdown to
+    var countDownDate = new Date("Jul 25, 2022 16:37:52").getTime();
+    var myFunc = setInterval(function () {
+      var now = new Date().getTime();
+      var timeLeft = countDownDate - now;
+      var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      // Result is output to the specific element
+      document.getElementById("days").innerHTML = days + "<span> يوم </span>";
+      document.getElementById("hours").innerHTML = hours + "<span> ساعة </span> "
+      document.getElementById("minutes").innerHTML = minutes + " <span> دقيقة </span> "
+      document.getElementById("seconds").innerHTML = seconds + "<span> ثانية </span> "
+    }, 1000);
+  </script>
+  <!-- <script>
     function makeTimer() {
       // month , day , year , time24
       var endTime = new Date(" September 5, 2022 , 04:00 ");
@@ -280,7 +297,7 @@
       $("#seconds").html(seconds + "<span> ثواني </span>");
     }
     setInterval(function () { makeTimer(); }, 0);
-  </script>
+  </script> -->
 </body>
 
 </html>

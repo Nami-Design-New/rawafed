@@ -147,7 +147,7 @@ $(document).ready(function () {
   //   } addWowDelay();
   // }
   function addWowDelay() {
-    $(" .services .wow , .trending .wow , .accordion-item.wow ").each(function (
+    $(" .services .wow , .trending .wow , .accordion-item.wow , .recruitments .wow ").each(function (
       i
     ) {
       d = i * 0.09;

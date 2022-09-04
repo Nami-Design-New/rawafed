@@ -792,8 +792,8 @@ span.select2.select2-container.select2-container--default {
   padding: 0;
 }
 .testimonials .singleItem .itemComment {
-  border: 2px solid #F5F4DE;
-  background-color: #F5F4DE;
+  border: 2px solid #f5f4de;
+  background-color: #f5f4de;
   padding: 30px 20px;
   border-radius: 10px;
   position: relative;
@@ -810,7 +810,7 @@ span.select2.select2-container.select2-container--default {
   width: 0;
   position: absolute;
   bottom: -20px;
-  border-color: #F5F4DE rgba(245, 244, 222, 0) rgba(245, 244, 222, 0);
+  border-color: #f5f4de rgba(245, 244, 222, 0) rgba(245, 244, 222, 0);
   border-style: solid;
   border-width: 20px 35px 32px 10px;
   transform: scaleX(-1);
@@ -827,13 +827,95 @@ span.select2.select2-container.select2-container--default {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
-  border: 2px solid #F5F4DE;
+  border: 2px solid #f5f4de;
 }
 .testimonials .singleItem .clientInfo h5 {
   text-transform: uppercase;
   color: #145e4e;
   font-weight: bold;
   margin-right: 16px;
+}
+
+.recruitments {
+  padding: 50px 0;
+}
+.recruitments .recruitmentsteps {
+  position: relative;
+  justify-content: center;
+}
+.recruitments .recruitmentsteps .rStep {
+  background-color: #f5f4de;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 16px;
+  margin: auto;
+}
+.recruitments .recruitmentsteps .rStep::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  width: 100%;
+  height: 100%;
+  background-color: #f5f4de;
+  z-index: -1;
+  border-radius: 16px;
+}
+.recruitments .recruitmentsteps .rStep::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  border: 1px dashed #145e4e;
+  z-index: -2;
+}
+.recruitments .recruitmentsteps .rStep .num {
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #145e4e;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.recruitments .recruitmentsteps .rStep h5 {
+  font-weight: bold;
+  color: #145e4e;
+  margin-bottom: 10px;
+}
+.recruitments .recruitmentsteps .rCol:last-child .rStep::after, .recruitments .recruitmentsteps .rCol:nth-child(4n) .rStep::after {
+  display: none;
+}
+@media (max-width: 992px) {
+  .recruitments .recruitmentsteps .rCol:nth-child(2n) .rStep::after {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .recruitments .recruitmentsteps .rCol .rStep::after {
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+  }
+  .recruitments .recruitmentsteps .rCol:nth-child(2n) .rStep::after {
+    display: unset;
+  }
 }
 
 .Features,

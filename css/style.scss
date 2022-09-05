@@ -538,6 +538,9 @@ span.select2.select2-container.select2-container--default {
   display: none;
 }
 
+
+
+
 .mainSection {
   position: relative;
   min-height: calc(100vh - 50px);
@@ -1248,6 +1251,61 @@ span.select2.select2-container.select2-container--default {
     }
   }
 }
+.sideSocial{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+  flex-direction: column;
+  justify-content: end;
+  direction: ltr;
+  display: none;
+  a{
+    width: 36px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mainColor;
+    color: $white-color;
+    background-color: $mainColor;
+    &:first-child{
+      border-top-right-radius: 16px;
+    }
+    &:last-child{
+      border-bottom-right-radius: 16px;
+    }
+    &:hover{
+      width: 48px;
+        &.facebook {
+          background: #4267B2;
+        }
+
+        &.twitter {
+          background: #1DA1F2;
+        }
+        &.instagram {
+          background: #8a3ab9;
+        }
+        &.snapchat {
+          background: #FFFC00;
+          
+        }
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .Features,
 .musanedFeatures {
   background-color: #f2f3f8;

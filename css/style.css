@@ -1346,6 +1346,49 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
+.sideSocial {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+  flex-direction: column;
+  justify-content: end;
+  direction: ltr;
+  display: none;
+}
+.sideSocial a {
+  width: 36px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #145e4e;
+  color: #ffffff;
+  background-color: #145e4e;
+}
+.sideSocial a:first-child {
+  border-top-right-radius: 16px;
+}
+.sideSocial a:last-child {
+  border-bottom-right-radius: 16px;
+}
+.sideSocial a:hover {
+  width: 48px;
+}
+.sideSocial a:hover.facebook {
+  background: #4267B2;
+}
+.sideSocial a:hover.twitter {
+  background: #1DA1F2;
+}
+.sideSocial a:hover.instagram {
+  background: #8a3ab9;
+}
+.sideSocial a:hover.snapchat {
+  background: #FFFC00;
+}
+
 .Features,
 .musanedFeatures {
   background-color: #f2f3f8;

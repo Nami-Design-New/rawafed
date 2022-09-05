@@ -84,7 +84,7 @@
           <div class=" col-md-8 col-lg-9 p-2 profileContent">
             <!-- ================ routeNav ================= -->
             <div class="routeNav">
-              <button onclick="goBack()" class="Back">
+              <button onclick="history.back()" class="Back">
                 <i class="fas fa-angle-right"></i>
               </button>
               <ul>
@@ -254,10 +254,7 @@
   <script>
     $('#Header').load("Header.html");
     $('#Footer').load("Footer.html");
-    // goBack
-    function goBack() {
-      window.history.back();
-    };
+
   </script>
   <script>
     var countDownDate = new Date("Jul 25, 2022 16:00:00").getTime();

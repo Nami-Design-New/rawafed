@@ -50,7 +50,7 @@
     <!-- ================ spinner ================= -->
     <!-- Main Banner  -->
     <section class="mainBanner">
-      <button onclick="goBack()" class="Back">
+      <button onclick="history.back()" class="Back">
         <i class="fas fa-angle-left"></i>
       </button>
       <ul>
@@ -148,10 +148,7 @@
   <script>
     $('#Header').load("Header.html");
     $('#Footer').load("Footer.html");
-    // goBack
-    function goBack() {
-      window.history.back();
-    };
+
   </script>
 </body>
 

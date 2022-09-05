@@ -48,57 +48,91 @@
       </div>
     </div>
     <!-- ================ spinner ================= -->
-    <!-- ================ mainSlider ================= -->
-    <section class="MainSlider">
-      <div class="swiper MainSlider-container ">
-        <div class="swiper-wrapper">
-          <!-- swiper-slide -->
-          <div class="swiper-slide  mainSlideItem" style="background-image:url(img/s1.webp)">
-            <div class=" info">
-              <h4 class="hint"> مع روافد نجد ...</h4>
-              <h1 class="sliderTitle"> تجربة الاستقدام اسهل وافضل </h1>
-              <a href="all-workers_cv.html" class="defaultBtn"> <i class="fa-solid fa-briefcase me-2"></i> طلب استقدام
-                <span></span>
-              </a>
+
+    <!-- ============= main section =============  -->
+    <section class="mainSection">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2 p-1">
+            <!-- orbit canvas -->
+            <div id="globe"> <canvas></canvas> </div>
+          </div>
+          <div class="col-md-5 order-md-1 p-1">
+            <!-- main slider -->
+            <div class="mainSlider swiperContainer">
+              <div class="swiper mainSliderContainer">
+                <div class="swiper-wrapper">
+                  <!-- swiper-slide -->
+                  <div class="swiper-slide mainSlideItem">
+                    <div class="info">
+                      <h1 class="sliderTitle"> مع روافد نجد ...</h1>
+                      <p class="hint"> تجربة الاستقدام اسهل وافضل </p>
+                      <a href="#!" class="animatedLink">
+                        طلب استقدام
+                        <i class="fa-regular fa-left-long ms-2"><span></span></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- swiper-slide -->
+                  <div class="swiper-slide mainSlideItem">
+                    <div class="info">
+                      <h1 class="sliderTitle">توفر روافد نجد </h1>
+                      <p class="hint"> ايدي عاملة مميزة ومدربة بحرفية وتؤدي عملها بأمانة وفقا لمطالب العملاء </p>
+                      <a href="#!" class="animatedLink">
+                        طلب استقدام
+                        <i class="fa-regular fa-left-long ms-2"><span></span></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- swiper-slide -->
+                  <div class="swiper-slide mainSlideItem">
+                    <div class="info">
+                      <h1 class="sliderTitle">نقدم أفضل خدمات  </h1>
+                      <p class="hint">
+                        استقدام العمالة المنزلية استقدام سريع بأسعار تنافسية   </p>
+                      <a href="#!" class="animatedLink">
+                        طلب استقدام
+                        <i class="fa-regular fa-left-long ms-2"><span></span></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- swiper-slide -->
+                  <div class="swiper-slide mainSlideItem">
+                    <div class="info">
+                      <h1 class="sliderTitle"> مرخصين من </h1>
+                      <p class="hint">
+                        الموارد البشرية والتنمية ومنصة مساند   </p>
+                      <a href="#!" class="animatedLink">
+                        طلب استقدام
+                        <i class="fa-regular fa-left-long ms-2"><span></span></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- swiper-slide -->
-          <div class="swiper-slide  mainSlideItem" style="background-image:url(img/s2.webp)">
-            <div class=" info">
-              <h4 class="hint"> توفر روافد نجد </h4>
-              <h1 class="sliderTitle"> ايدي عاملة مميزة ومدربة بحرفية وتؤدي عملها بأمانة وفقا لمطالب العملاء </h1>
-              <a href="all-workers_cv.html" class="defaultBtn"> <i class="fa-solid fa-briefcase me-2"></i> طلب استقدام
-                <span></span>
-              </a>
-            </div>
-          </div>
-          <!-- swiper-slide -->
-          <div class="swiper-slide  mainSlideItem" style="background-image:url(img/s3.webp)">
-            <div class=" info">
-              <h4 class="hint"> نقدم أفضل خدمات </h4>
-              <h1 class="sliderTitle"> استقدام العمالة المنزلية استقدام سريع بأسعار تنافسية </h1>
-              <a href="all-workers_cv.html" class="defaultBtn"> <i class="fa-solid fa-briefcase me-2"></i> طلب استقدام
-                <span></span>
-              </a>
-            </div>
-          </div>
-          <!-- swiper-slide -->
-          <div class="swiper-slide  mainSlideItem" style="background-image:url(img/s4.webp)">
-            <div class=" info">
-              <h4 class="hint"> مرخصين من </h4>
-              <h1 class="sliderTitle"> الموارد البشرية والتنمية ومنصة مساند </h1>
-              <a href="all-workers_cv.html" class="defaultBtn"> <i class="fa-solid fa-briefcase me-2"></i> طلب استقدام
-                <span></span>
-              </a>
-            </div>
-          </div>
-          <!-- <div id="particles-js"></div> -->
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- bubble-animate -->
+      <div class="bubble-animate">
+        <span class="circle small square1"></span>
+        <span class="circle small square2"></span>
+        <span class="circle small square3"></span>
+        <span class="circle small square4"></span>
+        <span class="circle small square5"></span>
+        <span class="circle medium square1"></span>
+        <span class="circle medium square2"></span>
+        <span class="circle medium square3"></span>
+        <span class="circle medium square4"></span>
+        <span class="circle medium square5"></span>
+        <span class="circle large square1"></span>
+        <span class="circle large square2"></span>
+        <span class="circle large square3"></span>
+        <span class="circle large square4"></span>
       </div>
     </section>
+
     <!-- ================ Features ================= -->
     <section class="Features">
       <div class="container">
@@ -333,7 +367,7 @@
             <div class="rStep wow fadeInUp ">
               <span class="num"> 4 </span>
               <h5> رسوم الإستقدام </h5>
-              <p> يتم دفع رسوم الاستقدام باستخدام احدي بوابات الدفع  </p>
+              <p> يتم دفع رسوم الاستقدام باستخدام احدي بوابات الدفع </p>
             </div>
           </div>
           <!-- recruitment step -->
@@ -341,7 +375,7 @@
             <div class="rStep wow fadeInUp ">
               <span class="num"> 5 </span>
               <h5> وصول العمالة </h5>
-              <p> تصل العمالة المختارة الي المطار  </p>
+              <p> تصل العمالة المختارة الي المطار </p>
             </div>
           </div>
           <!-- recruitment step -->
@@ -752,6 +786,10 @@
   <script src="js/toastr.min.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/odometer.min.js"></script>
+  <!-- orbit -->
+  <script src="js/three.js"></script>
+  <script src="js/orbit.js"></script>
+  <!-- custom -->
   <script src="js/Custom.js"></script>
   <script>
     $('#Header').load("Header.html");

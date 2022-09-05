@@ -1,25 +1,22 @@
 $(document).ready(function () {
   //MainSlider
-  var swiper = new Swiper(".MainSlider-container", {
+  var mainSlider = new Swiper(".mainSliderContainer", {
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
-    effect: "fade",
+    // effect: "fade",
     speed: 500,
     autoplay: {
-      delay: 6000,
+      delay: 8000,
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".mainsliderPagination",
       clickable: true,
     },
-    keyboard: {
-      enabled: true,
-    },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".mainSliderNext",
+      prevEl: ".mainsliderPrev",
     },
   });
   //Categories Slider
@@ -147,9 +144,9 @@ $(document).ready(function () {
   //   } addWowDelay();
   // }
   function addWowDelay() {
-    $(" .services .wow , .trending .wow , .accordion-item.wow , .recruitments .wow ").each(function (
-      i
-    ) {
+    $(
+      " .services .wow , .trending .wow , .accordion-item.wow , .recruitments .wow "
+    ).each(function (i) {
       d = i * 0.09;
       $(this).attr("data-wow-delay", d + "s");
     });

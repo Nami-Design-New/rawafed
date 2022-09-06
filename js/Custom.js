@@ -1,24 +1,28 @@
 $(document).ready(function () {
   //MainSlider
-  var mainSlider = new Swiper(".mainSliderContainer", {
-    spaceBetween: 0,
-    centeredSlides: true,
-    loop: true,
-    // effect: "fade",
-    speed: 500,
-    autoplay: {
-      delay: 8000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".mainsliderPagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".mainSliderNext",
-      prevEl: ".mainsliderPrev",
-    },
-  });
+
+    var swiper = new Swiper(".MainSlider-container", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      loop: true,
+      effect: "fade",
+      speed: 500,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   //Categories Slider
   var swiper = new Swiper(".referencesSlider", {
     navigation: {

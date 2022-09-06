@@ -538,9 +538,6 @@ span.select2.select2-container.select2-container--default {
   display: none;
 }
 
-
-
-
 .mainSection {
   position: relative;
   min-height: calc(100vh - 50px);
@@ -624,6 +621,27 @@ span.select2.select2-container.select2-container--default {
     }
     a {
       animation: fadeInUp 1s 1.5s both;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 33%;
+    height: 100%;
+    background-color: $secondColor;
+    z-index: -4;
+    background-image: url(../img/pattern-1.webp);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 47%;
+      border-top-left-radius: 100px;
     }
   }
 }
@@ -884,7 +902,7 @@ span.select2.select2-container.select2-container--default {
     height: 48px;
     transition: width 0.3s ease-in-out;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -1258,7 +1276,7 @@ span.select2.select2-container.select2-container--default {
     }
   }
 }
-.sideSocial{
+.sideSocial {
   position: fixed;
   left: 0;
   top: 50%;
@@ -1268,7 +1286,7 @@ span.select2.select2-container.select2-container--default {
   justify-content: end;
   direction: ltr;
   display: none;
-  a{
+  a {
     width: 36px;
     height: 40px;
     display: flex;
@@ -1277,36 +1295,32 @@ span.select2.select2-container.select2-container--default {
     background-color: $mainColor;
     color: $white-color;
     background-color: $mainColor;
-    &:first-child{
+    &:first-child {
       border-top-right-radius: 16px;
     }
-    &:last-child{
+    &:last-child {
       border-bottom-right-radius: 16px;
     }
-    &:hover{
+    &:hover {
       border-radius: 0 16px 16px 0;
       width: 48px;
-        &.facebook {
-          background: #4267B2;
-        }
+      &.facebook {
+        background: #4267b2;
+      }
 
-        &.twitter {
-          background: #1DA1F2;
-        }
-        &.instagram {
-          background: #8a3ab9;
-        }
-        &.snapchat {
-          background: #FFFC00;
-          color: #000;
-          
-        }
+      &.twitter {
+        background: #1da1f2;
+      }
+      &.instagram {
+        background: #8a3ab9;
+      }
+      &.snapchat {
+        background: #fffc00;
+        color: #000;
       }
     }
+  }
 }
-
-
-
 
 .ourServices {
   padding-top: 50px;
@@ -1417,22 +1431,18 @@ span.select2.select2-container.select2-container--default {
       }
     }
   }
-  
 }
 
-.requirements{
+.requirements {
   background-image: url(../img/pattern-1.webp);
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
 
-  .requirement{
+  .requirement {
     background-color: $white-color;
   }
 }
-
-
-
 
 .Features,
 .musanedFeatures {
@@ -1555,6 +1565,92 @@ span.select2.select2-container.select2-container--default {
     }
   }
 }
+
+.Features {
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: -320px;
+    background: url(../img/about.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: scaleX(-1);
+
+
+    @media (max-width:768px) {
+      width: 100%;
+      height: 250px;
+      top: -150px;
+    }
+  }
+
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    @media (max-width:768px) {
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 50px !important;
+      margin-bottom: 20px;
+      color: $mainColor;
+      @media (max-width:768px) {
+        font-size: 30px !important;
+
+      }
+
+    }
+    p {
+      color: #777;
+      font-size: 16px !important;
+      line-height: 34px;
+      @media (max-width:768px) {
+        font-size: 13px !important;
+        line-height: 32px;
+
+      }
+    }
+
+
+  }
+  .aboutImg {
+    max-width: 500px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100px 0 100px 0;
+
+    }
+    &::before {
+      content: "";
+      width: 102%;
+      height: 102%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      background-color:  $gold;
+z-index: -1;
+border-radius: 100px 0 100px 0;
+
+    }
+  }
+}
+
 .family {
   padding: 70px 0 50px;
   position: relative;

@@ -1308,7 +1308,117 @@ span.select2.select2-container.select2-container--default {
 
 
 
-
+.ourServices {
+  padding-top: 50px;
+  // .container-fluid{
+  //   display: flex;
+  //   align-items: center;
+  // }
+  .swiper-wrapper {
+    padding: 30px 0px 80px;
+    .swiper-slide {
+      width: auto !important;
+      &:nth-child(even) {
+        margin-top: 40px;
+        @media (max-width: 768px) {
+          margin-top: unset;
+        }
+      }
+    }
+  }
+  .flipCard {
+    width: 100%;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    perspective: 1000px;
+    .cardFront {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      backface-visibility: hidden;
+      transform: rotateY(0deg);
+      transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: auto;
+        color: $white-color;
+        h3 {
+          font-weight: bold;
+        }
+        .animatedLink {
+          color: $white-color;
+          i {
+            font-size: 24px;
+          }
+          span {
+            border-color: $white-color;
+          }
+        }
+      }
+    }
+    .cardBack {
+      padding: 20px;
+      position: absolute;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 2rem 3rem #0000000d;
+      background-color: #fff;
+      .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 64px;
+          height: 64px;
+          object-fit: contain;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-weight: bold;
+          color: $mainColor;
+          margin-bottom: 15px;
+        }
+        p {
+          color: #777;
+        }
+        a {
+          margin-top: auto;
+          margin-right: auto;
+        }
+      }
+    }
+    &:hover {
+      z-index: 2;
+      .cardFront {
+        transform: rotateY(-180deg);
+      }
+      .cardBack {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+  
+}
 
 
 

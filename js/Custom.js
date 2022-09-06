@@ -114,6 +114,35 @@ $(document).ready(function () {
     observer: true,
     observeParents: true,
   });
+
+    // services slider
+    var servicesSlider = new Swiper(".servicesSlider", {
+      navigation: {
+        nextEl: ".servicesSliderNext",
+        prevEl: ".servicesSliderPrev",
+      },
+      pagination: {
+        el: ".servicesSlidePagination",
+        type: "fraction",
+      },
+      loop: true,
+      spaceBetween: 30,
+      speed: 1000,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: "auto",
+    });
+    $(".servicesSlider").hover(
+      function () {
+        this.swiper.autoplay.stop();
+      },
+      function () {
+        this.swiper.autoplay.start();
+      }
+    );
+    
   // toastr
   toastr.options = {
     closeButton: true,

@@ -1509,6 +1509,16 @@ span.select2.select2-container.select2-container--default {
   transform: rotateY(0deg);
 }
 
+.requirements {
+  background-image: url(../img/pattern-1.webp);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.requirements .requirement {
+  background-color: #ffffff;
+}
+
 .Features,
 .musanedFeatures {
   background-color: #f2f3f8;

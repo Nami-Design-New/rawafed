@@ -1420,7 +1420,16 @@ span.select2.select2-container.select2-container--default {
   
 }
 
+.requirements{
+  background-image: url(../img/pattern-1.webp);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 
+  .requirement{
+    background-color: $white-color;
+  }
+}
 
 
 

@@ -1084,6 +1084,57 @@ span.select2.select2-container.select2-container--default {
   color: #000;
 }
 
+.modal {
+  z-index: 1049;
+}
+
+.cvModal .workerCvSlider img {
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  cursor: zoom-in;
+}
+.cvModal .workerCvSlider .swiper-button-prev,
+.cvModal .workerCvSlider .swiper-button-next {
+  color: #145e4e;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+}
+.cvModal .workerCvSlider .swiper-button-prev:hover,
+.cvModal .workerCvSlider .swiper-button-next:hover {
+  background-color: #f5f4de;
+  color: #ffffff;
+}
+.cvModal .workerCvSlider .swiper-button-prev::after, .cvModal .workerCvSlider .swiper-button-prev::before,
+.cvModal .workerCvSlider .swiper-button-next::after,
+.cvModal .workerCvSlider .swiper-button-next::before {
+  font-weight: 300;
+  font-size: 20px;
+}
+.cvModal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cvModal ul li {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 49%;
+  padding: 10px;
+}
+.cvModal ul li h6 {
+  color: #777;
+  font-size: small;
+}
+.cvModal ul li p {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 .ourServices {
   padding-top: 50px;
 }
@@ -3233,7 +3284,11 @@ span.select2.select2-container.select2-container--default {
 }
 
 .selectCustomerService {
-  padding: 70px 0;
+  padding: 30px 0 0;
+}
+.selectCustomerService .hint {
+  text-align: center;
+  margin-bottom: 16px;
 }
 .selectCustomerService .headTitle h2 {
   font-size: 30px !important;
@@ -3248,37 +3303,36 @@ span.select2.select2-container.select2-container--default {
 }
 .selectCustomerService .choose {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  background-color: #f5f4de;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: rgba(0, 161, 154, 0.1254901961);
+  padding: 16px;
+  border-radius: 16px;
 }
 .selectCustomerService .choose .customerOption {
-  width: 100%;
+  padding: 5px;
 }
 .selectCustomerService .choose .btn {
-  padding: 15px 20px;
+  padding: 8px 16px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1882352941);
   box-shadow: none;
-  width: 96%;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
   transition: all 0.3s ease-in-out;
-  border: 4px solid transparent;
+  border: 2px solid transparent;
+  border-radius: 16px;
 }
 .selectCustomerService .choose .btn img {
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  min-width: 50px;
   margin: 0 auto 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .selectCustomerService .choose .btn span {
   text-transform: capitalize;
+  font-size: 13px !important;
 }
 .selectCustomerService .choose .btn-check:active + .btn-outline,
 .selectCustomerService .choose .btn-check:checked + .btn-outline,
@@ -3287,7 +3341,7 @@ span.select2.select2-container.select2-container--default {
 .selectCustomerService .choose .btn-outline:active {
   background-color: #ffffff;
   color: #145e4e;
-  border: 4px solid #145e4e;
+  border: 2px solid #145e4e;
 }
 .selectCustomerService .choose .btn-check:active + .btn-outline::after,
 .selectCustomerService .choose .btn-check:checked + .btn-outline::after,

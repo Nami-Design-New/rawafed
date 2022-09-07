@@ -837,13 +837,64 @@ span.select2.select2-container.select2-container--default {
 }
 
 .countries {
-  padding-top: 50px;
+  padding: 70px 0 50px;
+  background: linear-gradient(45deg, rgba(243, 243, 249, 0.9098039216), rgba(243, 243, 249, 0.9607843137)), url(../img/countries.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
-.countries .swiper-wrapper {
-  padding: 30px 0px 80px;
+@media (max-width: 768px) {
+  .countries {
+    background-size: contain;
+  }
 }
-.countries .swiper-wrapper .swiper-slide {
-  width: auto !important;
+.countries .allCountries {
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .countries .allCountries {
+    margin-top: 0;
+  }
+}
+.countries .country {
+  position: relative;
+  isolation: isolate;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  margin-top: 60px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(-45deg, #ece4d7, #fdfaf5);
+}
+.countries .country:hover {
+  box-shadow: 6px 10px 15px #dddde3, -10px -12px 15px #ffffff;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.countries .country img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+}
+.countries .country h2 {
+  font-weight: bold;
+  color: #145e4e;
+  margin-bottom: 20px;
+}
+.countries .country p {
+  color: #777;
+  margin-bottom: 20px;
 }
 
 .testimonials {

@@ -848,15 +848,57 @@ span.select2.select2-container.select2-container--default {
   }
 }
 .countries {
-  padding-top: 50px;
-  // .container-fluid{
-  //   display: flex;
-  //   align-items: center;
-  // }
-  .swiper-wrapper {
-    padding: 30px 0px 80px;
-    .swiper-slide {
-      width: auto !important;
+  padding: 70px 0 50px;
+  background: linear-gradient(45deg, #f3f3f9e8, #f3f3f9f5),
+    url(../img/countries.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @media (max-width: 768px) {
+    background-size: contain;
+  }
+  .allCountries {
+    margin-top: 30px;
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+  .country {
+    position: relative;
+    isolation: isolate;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    margin-top: 60px;
+    text-align: center;
+    transition: $transition;
+    background-image: linear-gradient(-45deg, #ece4d7, #fdfaf5);
+    &:hover {
+      box-shadow: 6px 10px 15px #dddde3, -10px -12px 15px #ffffff;
+      z-index: 1;
+      background-color: $white-color;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      object-position: center;
+      margin: auto;
+      margin-top: -50px;
+      margin-bottom: 20px;
+      border-radius: 100px;
+    }
+    h2 {
+      font-weight: bold;
+      color: $mainColor;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #777;
+      margin-bottom: 20px;
     }
   }
 }

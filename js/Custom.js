@@ -178,7 +178,7 @@ $(document).ready(function () {
   // }
   function addWowDelay() {
     $(
-      " .services .wow , .trending .wow , .accordion-item.wow , .recruitments .wow "
+      " .countries .wow , .services .wow , .trending .wow , .accordion-item.wow , .recruitments .wow "
     ).each(function (i) {
       d = i * 0.09;
       $(this).attr("data-wow-delay", d + "s");

@@ -3296,7 +3296,10 @@ span.select2.select2-container.select2-container--default {
 }
 .selectCustomerService .hint {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #145e4e;
 }
 .selectCustomerService .headTitle h2 {
   font-size: 30px !important;

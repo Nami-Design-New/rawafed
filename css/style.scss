@@ -3282,7 +3282,10 @@ span.select2.select2-container.select2-container--default {
   .hint{
     text-align: center;
     // color:  #777;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    color: $mainColor;
   }
   .headTitle {
     h2 {

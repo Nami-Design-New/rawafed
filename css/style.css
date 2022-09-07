@@ -1134,6 +1134,14 @@ span.select2.select2-container.select2-container--default {
   font-weight: bold;
   margin-right: 5px;
 }
+.cvModal .modal-footer .btn {
+  min-height: 40px;
+  padding: 8px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
 
 .ourServices {
   padding-top: 50px;

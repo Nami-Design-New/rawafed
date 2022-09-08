@@ -3352,6 +3352,18 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
+.countriesTwo {
+  .swiper-wrapper {
+    padding: 30px 0px 80px;
+    .swiper-slide {
+      width: auto !important;
+    }
+  }
+  .countriesSlider {
+    padding: 0;
+  }
+}
+
 .contactCustomerService {
   padding: 70px 0;
 }

@@ -4628,6 +4628,300 @@ span.select2.select2-container.select2-container--default {
     border-radius: 4px 4px 0 0;
   }
 }
+
+
+
+
+
+.cvPrint {
+  position: relative;
+  padding: 50px 0 0;
+  isolation: isolate;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #40b2b3;
+    z-index: -1;
+  }
+  .mainInfo {
+    padding: 16px;
+    padding-bottom: 60px;
+    border-radius: 1000px;
+    background-color: #fff;
+    text-align: center;
+    border: 3px solid #40b2b3;
+    img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+    .info {
+      margin-top: 36px;
+      .title {
+        font-weight: bold;
+        color: #40b2b3;
+        margin-bottom: 12px;
+      }
+      .data {
+        color: #666;
+      }
+    }
+  }
+  .languages {
+    text-align: center;
+    .title {
+      padding: 10px 60px;
+      background-color: #40b2b3;
+      color: #fff;
+      text-align: center;
+      margin: auto;
+      margin-top: 40px;
+      display: inline-block;
+      border-radius: 100px;
+    }
+    .Percentages {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px 0;
+      .percentDiv {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .percent {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .snapChat {
+      margin: 30px auto;
+      width: 80%;
+      max-width: 200px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+  }
+
+  .topInfo {
+    background-color: #40b2b3;
+
+    .logo {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        height: 80px;
+        object-fit: contain;
+      }
+    }
+    table {
+      margin: 20px 0;
+      border-color: #fff;
+      text-align: center;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+    .name {
+      padding: 10px;
+      display: flex;
+      color: #fff;
+      .title {
+        font-weight: bold;
+        color: #e1e1e1;
+      }
+      h1 {
+        font-weight: bold;
+      }
+    }
+  }
+  .bottomInfo{
+    position: relative;
+    padding: 50px 20px;
+    &::before{
+      content: "";
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #40b2b3;
+    }
+
+    .infoDiv{
+      padding: 20px 0;
+
+      .title{
+        background-color: #40b2b3 ;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 0 100px  100px 0;
+        position: relative;
+        color: #fff;
+        padding-left: 10px;
+        &::before{
+          content: "";
+          width: 20px;
+          height: 3px;
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          background-color: #40b2b3;
+        }
+    
+
+      }
+      .innerInfo{
+        padding: 30px 0;
+        .infoRow{
+          position: relative;
+          padding-left: 30px !important;
+
+          &::before{
+            content: "";
+            width: 3px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #40b2b3;
+          }
+          &:last-child{
+            &::before{
+              display: none;
+            }
+          }
+          .data{
+            padding: 16px 4px;
+            .innerTitle{
+              font-weight: bold;
+              color: #777;
+              margin-bottom: 10px;
+            }
+          .innerData{
+            font-weight: bold;
+          }
+          }
+      
+        }
+      }
+
+      .table{
+        margin: 30px 0;
+        text-align: center;
+        border-color: #000;
+      }
+      
+      .passport{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        h6{
+          font-weight: bold;
+          color: #777;
+        }
+        h3{
+          font-weight: bold;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .printFooter{
+    background-color: #40b2b3 ;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .contact{
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+  }
+}
+
+$PercentSize: 100px;
+.percent {
+  position: relative;
+  width: $PercentSize;
+  height: $PercentSize;
+  overflow: hidden;
+  .percentNum {
+    position: absolute;
+    width: calc($PercentSize * 0.8);
+    height: calc($PercentSize * 0.8);
+    z-index: 1;
+    right: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #eee;
+    transform: translateX(50%) translateY(-50%);
+    font-size: calc($PercentSize * 0.2) !important;
+    font-weight: bold;
+    span {
+      font-weight: normal;
+      color: #777;
+      font-size: calc($PercentSize * 0.12)  !important;
+    }
+  }
+  // the slice (mask)
+  .slice {
+    position: absolute;
+    width: $PercentSize;
+    height: $PercentSize;
+    clip: rect(0px, $PercentSize, $PercentSize, calc($PercentSize / 2));
+  }
+  // circle to show the status
+  .bar {
+    position: absolute;
+    border: calc($PercentSize * 0.04) solid #40b2b3;
+    width: $PercentSize;
+    height: $PercentSize;
+    clip: rect(0px, calc($PercentSize / 2), $PercentSize, 0px);
+    border-radius: 50%;
+    transform: rotate(0deg);
+  }
+  // loop to create all needed elements automatically
+  @for $j from 51 through 100 {
+    &.p#{$j} .slice {
+      clip: rect(auto, auto, auto, auto);
+    }
+    &.p#{$j} .bar:after {
+      transform: rotate(180deg);
+    }
+    &.p#{$j} .fill {
+      position: absolute;
+      border: calc($PercentSize * 0.04) solid #40b2b3;
+      width: $PercentSize;
+      height: $PercentSize;
+      clip: rect(0px, calc($PercentSize / 2), $PercentSize, 0px);
+      border-radius: 50%;
+
+      transform: rotate(180deg);
+    }
+  }
+  // loop to rotate all 100 circles
+  @for $j from 1 through 100 {
+    &.p#{$j} .bar {
+      transform: rotate((360/100 * $j) + deg);
+    }
+  }
+}
+
+
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
